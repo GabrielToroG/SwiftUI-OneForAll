@@ -5,4 +5,13 @@
 //  Created by Gabriel Alonso Toro Guzmán on 21-01-25.
 //
 
-import Foundation
+import SwiftUI
+
+protocol Coordinator: ObservableObject {
+    associatedtype CoordinatorSteps: Route
+    associatedtype CoordinatorView: View
+
+    var path: [CoordinatorSteps] { get set }
+
+    func redirect(_ path: CoordinatorSteps) -> CoordinatorView
+}

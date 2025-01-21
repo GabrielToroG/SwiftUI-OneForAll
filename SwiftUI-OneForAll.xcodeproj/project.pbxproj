@@ -11,6 +11,12 @@
 		7F1A80EA2D3FF10A00C8CB43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A80E92D3FF10A00C8CB43 /* ContentView.swift */; };
 		7F1A80EC2D3FF10B00C8CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */; };
 		7F1A80EF2D3FF10B00C8CB43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EE2D3FF10B00C8CB43 /* Preview Assets.xcassets */; };
+		7F1A81002D3FF51500C8CB43 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80FB2D3FF51500C8CB43 /* Montserrat-Bold.ttf */; };
+		7F1A81012D3FF51500C8CB43 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80FC2D3FF51500C8CB43 /* Montserrat-Light.ttf */; };
+		7F1A81022D3FF51500C8CB43 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80FD2D3FF51500C8CB43 /* Montserrat-Regular.ttf */; };
+		7F1A81032D3FF51500C8CB43 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80FE2D3FF51500C8CB43 /* Montserrat-SemiBold.ttf */; };
+		7F1A81062D40361C00C8CB43 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81052D40361C00C8CB43 /* Coordinator.swift */; };
+		7F1A81082D40363300C8CB43 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81072D40363300C8CB43 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		7F1A80E92D3FF10A00C8CB43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1A80EE2D3FF10B00C8CB43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F1A80FB2D3FF51500C8CB43 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		7F1A80FC2D3FF51500C8CB43 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		7F1A80FD2D3FF51500C8CB43 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		7F1A80FE2D3FF51500C8CB43 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		7F1A81052D40361C00C8CB43 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7F1A81072D40363300C8CB43 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +63,11 @@
 		7F1A80E62D3FF10A00C8CB43 /* SwiftUI-OneForAll */ = {
 			isa = PBXGroup;
 			children = (
-				7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */,
+				7F1A80F52D3FF14000C8CB43 /* AppLife */,
+				7F1A80F62D3FF14E00C8CB43 /* Resources */,
+				7F1A80F72D3FF15E00C8CB43 /* Utils */,
+				7F1A80F82D3FF16300C8CB43 /* AppModule */,
 				7F1A80E92D3FF10A00C8CB43 /* ContentView.swift */,
-				7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */,
 				7F1A80ED2D3FF10B00C8CB43 /* Preview Content */,
 			);
 			path = "SwiftUI-OneForAll";
@@ -65,6 +79,58 @@
 				7F1A80EE2D3FF10B00C8CB43 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F1A80F52D3FF14000C8CB43 /* AppLife */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */,
+			);
+			path = AppLife;
+			sourceTree = "<group>";
+		};
+		7F1A80F62D3FF14E00C8CB43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A80FF2D3FF51500C8CB43 /* Font */,
+				7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F1A80F72D3FF15E00C8CB43 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A81042D402F1800C8CB43 /* Protocols */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F1A80F82D3FF16300C8CB43 /* AppModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppModule;
+			sourceTree = "<group>";
+		};
+		7F1A80FF2D3FF51500C8CB43 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A80FB2D3FF51500C8CB43 /* Montserrat-Bold.ttf */,
+				7F1A80FC2D3FF51500C8CB43 /* Montserrat-Light.ttf */,
+				7F1A80FD2D3FF51500C8CB43 /* Montserrat-Regular.ttf */,
+				7F1A80FE2D3FF51500C8CB43 /* Montserrat-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7F1A81042D402F1800C8CB43 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A81052D40361C00C8CB43 /* Coordinator.swift */,
+				7F1A81072D40363300C8CB43 /* Route.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +191,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1A81032D3FF51500C8CB43 /* Montserrat-SemiBold.ttf in Resources */,
+				7F1A81012D3FF51500C8CB43 /* Montserrat-Light.ttf in Resources */,
 				7F1A80EF2D3FF10B00C8CB43 /* Preview Assets.xcassets in Resources */,
 				7F1A80EC2D3FF10B00C8CB43 /* Assets.xcassets in Resources */,
+				7F1A81022D3FF51500C8CB43 /* Montserrat-Regular.ttf in Resources */,
+				7F1A81002D3FF51500C8CB43 /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1A80EA2D3FF10A00C8CB43 /* ContentView.swift in Sources */,
+				7F1A81082D40363300C8CB43 /* Route.swift in Sources */,
 				7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */,
+				7F1A81062D40361C00C8CB43 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
