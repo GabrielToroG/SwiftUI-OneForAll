@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct SwiftUI_OneForAllApp: App {
+
+    @StateObject private var injection = Injection.shared
+    @StateObject private var coordinator = MainTabCoordinator(container: Injection.shared.getContainer())
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            coordinator.startView()
+                .environmentObject(coordinator)
+                .environmentObject(injection)
         }
     }
 }
