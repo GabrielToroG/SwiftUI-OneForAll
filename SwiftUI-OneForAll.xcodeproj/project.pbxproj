@@ -35,6 +35,7 @@
 		7F1A813E2D40755800C8CB43 /* FunctionalitiesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A813D2D40755800C8CB43 /* FunctionalitiesRoute.swift */; };
 		7F1A81402D40761900C8CB43 /* FunctionalitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A813F2D40761900C8CB43 /* FunctionalitiesViewModel.swift */; };
 		7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */; };
+		7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81442D40B47100C8CB43 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		7F1A813D2D40755800C8CB43 /* FunctionalitiesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesRoute.swift; sourceTree = "<group>"; };
 		7F1A813F2D40761900C8CB43 /* FunctionalitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesViewModel.swift; sourceTree = "<group>"; };
 		7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesView.swift; sourceTree = "<group>"; };
+		7F1A81442D40B47100C8CB43 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				7F1A810D2D403B5400C8CB43 /* ViewExtension.swift */,
+				7F1A81442D40B47100C8CB43 /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			files = (
 				7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */,
 				7F1A81322D40748500C8CB43 /* UIComponentsView.swift in Sources */,
+				7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */,
 				7F1A810E2D403B5400C8CB43 /* ViewExtension.swift in Sources */,
 				7F1A812D2D4073C700C8CB43 /* UIComponentsRoute.swift in Sources */,
 				7F1A813C2D40755100C8CB43 /* FunctionalitiesCoordinator.swift in Sources */,
