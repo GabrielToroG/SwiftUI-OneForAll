@@ -32,8 +32,8 @@ final class MainControllerProvider {
     }
 
     func getFunctionalitiesTab() -> some View {
-        let coordinator = container.obtener(UIComponentsCoordinator.self)!
-        let view = container.obtenerUna(UIComponentsView.self, argument: coordinator)
+        let coordinator = container.obtener(FunctionalitiesCoordinator.self)!
+        let view = container.obtenerUna(FunctionalitiesView.self, argument: coordinator)
         return view
     }
 }

@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "list_32dp_000000_FILL0_wght400_GRAD0_opsz40.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

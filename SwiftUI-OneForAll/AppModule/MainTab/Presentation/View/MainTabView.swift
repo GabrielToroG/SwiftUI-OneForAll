@@ -12,12 +12,12 @@ struct MainTabView: View {
         TabView {
             Injection.shared.controllerProvider.getUIComponentsTab()
                 .tabItem {
-                    Label("Tab 1", systemImage: "1.circle")
+                    Label("UIComponents", image: "components-icon")
                 }
             
             Injection.shared.controllerProvider.getFunctionalitiesTab()
                 .tabItem {
-                    Label("Tab 2", systemImage: "2.circle")
+                    Label("Funcionalidades", image: "functionalities-icon")
                 }
         }
     }

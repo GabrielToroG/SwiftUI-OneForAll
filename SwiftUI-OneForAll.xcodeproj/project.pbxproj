@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */; };
-		7F1A80EA2D3FF10A00C8CB43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A80E92D3FF10A00C8CB43 /* ContentView.swift */; };
 		7F1A80EC2D3FF10B00C8CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */; };
 		7F1A80EF2D3FF10B00C8CB43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EE2D3FF10B00C8CB43 /* Preview Assets.xcassets */; };
 		7F1A81002D3FF51500C8CB43 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80FB2D3FF51500C8CB43 /* Montserrat-Bold.ttf */; };
@@ -36,12 +35,15 @@
 		7F1A81402D40761900C8CB43 /* FunctionalitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A813F2D40761900C8CB43 /* FunctionalitiesViewModel.swift */; };
 		7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */; };
 		7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81442D40B47100C8CB43 /* ColorExtension.swift */; };
+		7F1A814A2D42183600C8CB43 /* UIComponentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81492D42183600C8CB43 /* UIComponentOption.swift */; };
+		7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8E82D430763009E8201 /* UIColorExtension.swift */; };
+		7FA6B8F12D430D07009E8201 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F02D430D07009E8201 /* Font.swift */; };
+		7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F22D44392D009E8201 /* Dimensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F1A80E42D3FF10A00C8CB43 /* SwiftUI-OneForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-OneForAll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_OneForAllApp.swift; sourceTree = "<group>"; };
-		7F1A80E92D3FF10A00C8CB43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1A80EE2D3FF10B00C8CB43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F1A80FB2D3FF51500C8CB43 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -69,6 +71,11 @@
 		7F1A813F2D40761900C8CB43 /* FunctionalitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesViewModel.swift; sourceTree = "<group>"; };
 		7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesView.swift; sourceTree = "<group>"; };
 		7F1A81442D40B47100C8CB43 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		7F1A81492D42183600C8CB43 /* UIComponentOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentOption.swift; sourceTree = "<group>"; };
+		7FA6B8E82D430763009E8201 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		7FA6B8EE2D430CD9009E8201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FA6B8F02D430D07009E8201 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		7FA6B8F22D44392D009E8201 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +108,11 @@
 		7F1A80E62D3FF10A00C8CB43 /* SwiftUI-OneForAll */ = {
 			isa = PBXGroup;
 			children = (
+				7FA6B8EE2D430CD9009E8201 /* Info.plist */,
 				7F1A80F52D3FF14000C8CB43 /* AppLife */,
 				7F1A80F62D3FF14E00C8CB43 /* Resources */,
 				7F1A80F72D3FF15E00C8CB43 /* Utils */,
 				7F1A80F82D3FF16300C8CB43 /* AppModule */,
-				7F1A80E92D3FF10A00C8CB43 /* ContentView.swift */,
 				7F1A80ED2D3FF10B00C8CB43 /* Preview Content */,
 			);
 			path = "SwiftUI-OneForAll";
@@ -139,6 +146,7 @@
 		7F1A80F72D3FF15E00C8CB43 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7FA6B8EF2D430CFE009E8201 /* Constants */,
 				7F1A810C2D403B4800C8CB43 /* Extensions */,
 				7F1A81042D402F1800C8CB43 /* Protocols */,
 				7F1A81092D403B1F00C8CB43 /* Structs */,
@@ -190,6 +198,7 @@
 			children = (
 				7F1A810D2D403B5400C8CB43 /* ViewExtension.swift */,
 				7F1A81442D40B47100C8CB43 /* ColorExtension.swift */,
+				7FA6B8E82D430763009E8201 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 		7F1A81252D40735500C8CB43 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7F1A81482D4217FA00C8CB43 /* Entity */,
 				7F1A812B2D4073BE00C8CB43 /* Coordinator */,
 				7F1A81332D40748B00C8CB43 /* ViewModel */,
 				7F1A81302D40747C00C8CB43 /* View */,
@@ -358,6 +368,23 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		7F1A81482D4217FA00C8CB43 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A81492D42183600C8CB43 /* UIComponentOption.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7FA6B8EF2D430CFE009E8201 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B8F02D430D07009E8201 /* Font.swift */,
+				7FA6B8F22D44392D009E8201 /* Dimensions.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,12 +465,14 @@
 				7F1A810E2D403B5400C8CB43 /* ViewExtension.swift in Sources */,
 				7F1A812D2D4073C700C8CB43 /* UIComponentsRoute.swift in Sources */,
 				7F1A813C2D40755100C8CB43 /* FunctionalitiesCoordinator.swift in Sources */,
-				7F1A80EA2D3FF10A00C8CB43 /* ContentView.swift in Sources */,
 				7F1A81082D40363300C8CB43 /* Route.swift in Sources */,
+				7FA6B8F12D430D07009E8201 /* Font.swift in Sources */,
+				7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */,
 				7F1A81402D40761900C8CB43 /* FunctionalitiesViewModel.swift in Sources */,
 				7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */,
 				7F1A811F2D406EA100C8CB43 /* MainTabModule.swift in Sources */,
 				7F1A81162D403C8700C8CB43 /* MainControllerProvider.swift in Sources */,
+				7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */,
 				7F1A811D2D406E8A00C8CB43 /* MainTabCoordinator.swift in Sources */,
 				7F1A81352D40749A00C8CB43 /* UIComponentsViewModel.swift in Sources */,
 				7F1A81122D403C7700C8CB43 /* Container.swift in Sources */,
@@ -451,6 +480,7 @@
 				7F1A813E2D40755800C8CB43 /* FunctionalitiesRoute.swift in Sources */,
 				7F1A812A2D4073A400C8CB43 /* UIComponentsModule.swift in Sources */,
 				7F1A810B2D403B2F00C8CB43 /* NavigationSetupModifier.swift in Sources */,
+				7F1A814A2D42183600C8CB43 /* UIComponentOption.swift in Sources */,
 				7F1A81062D40361C00C8CB43 /* Coordinator.swift in Sources */,
 				7F1A811B2D406E6600C8CB43 /* MainTabView.swift in Sources */,
 				7F1A812F2D4073E500C8CB43 /* UIComponentsCoordinator.swift in Sources */,
@@ -591,6 +621,7 @@
 				DEVELOPMENT_TEAM = ML7FBVGX3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-OneForAll/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -620,6 +651,7 @@
 				DEVELOPMENT_TEAM = ML7FBVGX3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-OneForAll/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

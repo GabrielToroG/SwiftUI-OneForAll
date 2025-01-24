@@ -8,15 +8,25 @@
 import SwiftUI
 
 struct FunctionalitiesView: View {
-    @ObservedObject var viewModel: FunctionalitiesViewModel
-    
+    @StateObject var viewModel: FunctionalitiesViewModel
+
+    init(viewModel: FunctionalitiesViewModel) {
+        self._viewModel = .init(wrappedValue: viewModel)
+    }
+
     var body: some View {
+        bodyContent
+        .applyNavigation(coordinator: viewModel.coordinator)
+    }
+}
+
+extension FunctionalitiesView {
+    var bodyContent: some View {
         VStack {
             Text("Wallet Tab")
             Button("Go to wallet detail") {
                 viewModel.coordinator.navigateToFirst()
             }
         }
-        .applyNavigation(coordinator: viewModel.coordinator)
     }
 }
