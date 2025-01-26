@@ -39,6 +39,14 @@
 		7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8E82D430763009E8201 /* UIColorExtension.swift */; };
 		7FA6B8F12D430D07009E8201 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F02D430D07009E8201 /* Font.swift */; };
 		7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F22D44392D009E8201 /* Dimensions.swift */; };
+		7FA6B8FA2D44413D009E8201 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F92D44413D009E8201 /* LabelView.swift */; };
+		7FA6B8FC2D444144009E8201 /* LabelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8FB2D444144009E8201 /* LabelViewModel.swift */; };
+		7FA6B9012D4453C1009E8201 /* ToolbarTrailingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B9002D4453C1009E8201 /* ToolbarTrailingModifier.swift */; };
+		7FA6B9032D4454F1009E8201 /* ToolbarLeadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B9022D4454F1009E8201 /* ToolbarLeadingModifier.swift */; };
+		7FA6B9052D44B4DE009E8201 /* FontsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B9042D44B4DE009E8201 /* FontsExtension.swift */; };
+		7FA6B9072D455DE2009E8201 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B9062D455DE2009E8201 /* TextExtension.swift */; };
+		7FA6B90A2D455EFE009E8201 /* MyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B9092D455EFE009E8201 /* MyText.swift */; };
+		7FA6B90C2D4575AC009E8201 /* MyConcatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B90B2D4575AC009E8201 /* MyConcatText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +84,14 @@
 		7FA6B8EE2D430CD9009E8201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA6B8F02D430D07009E8201 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		7FA6B8F22D44392D009E8201 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
+		7FA6B8F92D44413D009E8201 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		7FA6B8FB2D444144009E8201 /* LabelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewModel.swift; sourceTree = "<group>"; };
+		7FA6B9002D4453C1009E8201 /* ToolbarTrailingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarTrailingModifier.swift; sourceTree = "<group>"; };
+		7FA6B9022D4454F1009E8201 /* ToolbarLeadingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarLeadingModifier.swift; sourceTree = "<group>"; };
+		7FA6B9042D44B4DE009E8201 /* FontsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsExtension.swift; sourceTree = "<group>"; };
+		7FA6B9062D455DE2009E8201 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		7FA6B9092D455EFE009E8201 /* MyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyText.swift; sourceTree = "<group>"; };
+		7FA6B90B2D4575AC009E8201 /* MyConcatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcatText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +215,8 @@
 				7F1A810D2D403B5400C8CB43 /* ViewExtension.swift */,
 				7F1A81442D40B47100C8CB43 /* ColorExtension.swift */,
 				7FA6B8E82D430763009E8201 /* UIColorExtension.swift */,
+				7FA6B9042D44B4DE009E8201 /* FontsExtension.swift */,
+				7FA6B9062D455DE2009E8201 /* TextExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				7F1A81102D403C7100C8CB43 /* DI */,
+				7FA6B8FD2D445388009E8201 /* Presentation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -285,8 +304,8 @@
 			children = (
 				7F1A81482D4217FA00C8CB43 /* Entity */,
 				7F1A812B2D4073BE00C8CB43 /* Coordinator */,
-				7F1A81332D40748B00C8CB43 /* ViewModel */,
-				7F1A81302D40747C00C8CB43 /* View */,
+				7FA6B8F62D44410B009E8201 /* UIComponents */,
+				7FA6B8F52D4440FD009E8201 /* Label */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -385,6 +404,75 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		7FA6B8F52D4440FD009E8201 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B8F82D44412E009E8201 /* ViewModel */,
+				7FA6B8F72D444128009E8201 /* View */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		7FA6B8F62D44410B009E8201 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A81332D40748B00C8CB43 /* ViewModel */,
+				7F1A81302D40747C00C8CB43 /* View */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		7FA6B8F72D444128009E8201 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B8F92D44413D009E8201 /* LabelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FA6B8F82D44412E009E8201 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B8FB2D444144009E8201 /* LabelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7FA6B8FD2D445388009E8201 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B9082D455EF7009E8201 /* Atoms */,
+				7FA6B8FE2D4453A5009E8201 /* Organisms */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7FA6B8FE2D4453A5009E8201 /* Organisms */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B8FF2D4453B4009E8201 /* Toolbar */,
+			);
+			path = Organisms;
+			sourceTree = "<group>";
+		};
+		7FA6B8FF2D4453B4009E8201 /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B9022D4454F1009E8201 /* ToolbarLeadingModifier.swift */,
+				7FA6B9002D4453C1009E8201 /* ToolbarTrailingModifier.swift */,
+			);
+			path = Toolbar;
+			sourceTree = "<group>";
+		};
+		7FA6B9082D455EF7009E8201 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B9092D455EFE009E8201 /* MyText.swift */,
+				7FA6B90B2D4575AC009E8201 /* MyConcatText.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -459,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA6B90C2D4575AC009E8201 /* MyConcatText.swift in Sources */,
 				7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */,
 				7F1A81322D40748500C8CB43 /* UIComponentsView.swift in Sources */,
 				7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */,
@@ -470,20 +559,27 @@
 				7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */,
 				7F1A81402D40761900C8CB43 /* FunctionalitiesViewModel.swift in Sources */,
 				7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */,
+				7FA6B8FC2D444144009E8201 /* LabelViewModel.swift in Sources */,
+				7FA6B9052D44B4DE009E8201 /* FontsExtension.swift in Sources */,
 				7F1A811F2D406EA100C8CB43 /* MainTabModule.swift in Sources */,
 				7F1A81162D403C8700C8CB43 /* MainControllerProvider.swift in Sources */,
 				7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */,
+				7FA6B9072D455DE2009E8201 /* TextExtension.swift in Sources */,
 				7F1A811D2D406E8A00C8CB43 /* MainTabCoordinator.swift in Sources */,
 				7F1A81352D40749A00C8CB43 /* UIComponentsViewModel.swift in Sources */,
 				7F1A81122D403C7700C8CB43 /* Container.swift in Sources */,
 				7F1A81142D403C7F00C8CB43 /* Injection.swift in Sources */,
 				7F1A813E2D40755800C8CB43 /* FunctionalitiesRoute.swift in Sources */,
 				7F1A812A2D4073A400C8CB43 /* UIComponentsModule.swift in Sources */,
+				7FA6B8FA2D44413D009E8201 /* LabelView.swift in Sources */,
 				7F1A810B2D403B2F00C8CB43 /* NavigationSetupModifier.swift in Sources */,
 				7F1A814A2D42183600C8CB43 /* UIComponentOption.swift in Sources */,
 				7F1A81062D40361C00C8CB43 /* Coordinator.swift in Sources */,
 				7F1A811B2D406E6600C8CB43 /* MainTabView.swift in Sources */,
 				7F1A812F2D4073E500C8CB43 /* UIComponentsCoordinator.swift in Sources */,
+				7FA6B9032D4454F1009E8201 /* ToolbarLeadingModifier.swift in Sources */,
+				7FA6B90A2D455EFE009E8201 /* MyText.swift in Sources */,
+				7FA6B9012D4453C1009E8201 /* ToolbarTrailingModifier.swift in Sources */,
 				7F1A81372D40752700C8CB43 /* FunctionalitiesModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

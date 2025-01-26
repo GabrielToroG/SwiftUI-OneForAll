@@ -19,8 +19,8 @@ final class UIComponentsCoordinator: ObservableObject {
         path.removeLast()
     }
     
-    func navigateToFirst() {
-        path.append(UIComponentsRoute.first)
+    func navigateToLabel() {
+        path.append(UIComponentsRoute.label)
     }
 }
 
@@ -28,9 +28,9 @@ extension UIComponentsCoordinator: Coordinator {
     @ViewBuilder
     func redirect(_ path: UIComponentsRoute) -> some View {
         switch path {
-        case .first:
-            let viewModel = UIComponentsViewModel(coordinator: self)
-            UIComponentsView(viewModel: viewModel)
+        case .label:
+            let viewModel = LabelViewModel(coordinator: self)
+            LabelView(viewModel: viewModel)
         }
     }
 }

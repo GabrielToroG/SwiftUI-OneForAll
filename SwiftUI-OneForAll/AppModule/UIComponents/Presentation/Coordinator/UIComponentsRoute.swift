@@ -8,5 +8,5 @@
 import Foundation
 
 enum UIComponentsRoute: Route {
-    case first
+    case label
 }

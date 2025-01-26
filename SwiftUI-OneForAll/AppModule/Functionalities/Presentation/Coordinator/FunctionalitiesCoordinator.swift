@@ -20,7 +20,7 @@ final class FunctionalitiesCoordinator: ObservableObject {
     }
     
     func navigateToFirst() {
-        path.append(UIComponentsRoute.first)
+        path.append(UIComponentsRoute.label)
     }
 }
 
@@ -28,7 +28,7 @@ extension FunctionalitiesCoordinator: Coordinator {
     @ViewBuilder
     func redirect(_ path: UIComponentsRoute) -> some View {
         switch path {
-        case .first:
+        case .label:
             let viewModel = FunctionalitiesViewModel(coordinator: self)
             FunctionalitiesView(viewModel: viewModel)
         }

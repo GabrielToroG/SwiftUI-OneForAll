@@ -29,7 +29,7 @@ struct UIComponentsView: View {
 extension UIComponentsView {
     var bodyContent: some View {
         VStack {
-            List(viewModel.options, id: \.self) { option in
+            List(Array(viewModel.options.enumerated()), id: \.0) { index, option in
                 HStack(spacing: Dimensions.Margin.normal) {
                     Image(option.icon)
                         .resizable()
@@ -42,9 +42,24 @@ extension UIComponentsView {
                 .padding(.horizontal, Dimensions.Margin.normal)
                 .listRowBackground(Color.clear)
                 .listRowInsets(EdgeInsets())
+                .onTapGesture {
+                    destinationView(for: index)
+                }
             }
             .listStyle(.plain)
             .scrollContentBackground(.hidden)
+        }
+    }
+}
+
+// MARK: - Actions
+extension UIComponentsView {
+    private func destinationView(for index: Int) {
+        switch index {
+        case 0:
+            viewModel.coordinator.navigateToLabel()
+        default:
+            print("No está implementado todavia")
         }
     }
 }
