@@ -23,14 +23,34 @@ private extension UIComponentsModule {
         container.registrar(UIComponentsCoordinator.self) { resolver in
             UIComponentsCoordinator(container: self.container)
         }
-
+        
         container.registrarUna(UIComponentsViewModel.self) { (resolver, coordinator: UIComponentsCoordinator) in
             UIComponentsViewModel(coordinator: coordinator)
         }
-
+        
         container.registrarUna(UIComponentsView.self) { (resolver, coordinator: UIComponentsCoordinator) in
             let viewModel = resolver.obtenerUna(UIComponentsViewModel.self, argument: coordinator)!
             return UIComponentsView(viewModel: viewModel)
+        }
+
+        // MARK: - Label
+        container.registrarUna(LabelViewModel.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            LabelViewModel(coordinator: coordinator)
+        }
+
+        container.registrarUna(LabelView.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            let viewModel = resolver.obtenerUna(LabelViewModel.self, argument: coordinator)!
+            return LabelView(viewModel: viewModel)
+        }
+
+        // MARK: - Image
+        container.registrarUna(ImageViewModel.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            ImageViewModel(coordinator: coordinator)
+        }
+
+        container.registrarUna(ImageView.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            let viewModel = resolver.obtenerUna(ImageViewModel.self, argument: coordinator)!
+            return ImageView(viewModel: viewModel)
         }
     }
 }

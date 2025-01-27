@@ -22,6 +22,10 @@ final class UIComponentsCoordinator: ObservableObject {
     func navigateToLabel() {
         path.append(UIComponentsRoute.label)
     }
+
+    func navigateToImage() {
+        path.append(UIComponentsRoute.image)
+    }
 }
 
 extension UIComponentsCoordinator: Coordinator {
@@ -29,8 +33,9 @@ extension UIComponentsCoordinator: Coordinator {
     func redirect(_ path: UIComponentsRoute) -> some View {
         switch path {
         case .label:
-            let viewModel = LabelViewModel(coordinator: self)
-            LabelView(viewModel: viewModel)
+            container.obtenerUna(LabelView.self, argument: self)
+        case .image:
+            container.obtenerUna(ImageView.self, argument: self)
         }
     }
 }

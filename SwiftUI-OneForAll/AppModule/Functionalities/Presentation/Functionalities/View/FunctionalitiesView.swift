@@ -1,5 +1,5 @@
 //
-//  UIComponentsView.swift
+//  FunctionalitiesView.swift
 //  SwiftUI-OneForAll
 //
 //  Created by Gabriel Alonso Toro Guzmán on 21-01-25.
@@ -7,26 +7,23 @@
 
 import SwiftUI
 
-struct UIComponentsView: View {
-    @StateObject var viewModel: UIComponentsViewModel
+struct FunctionalitiesView: View {
+    @StateObject var viewModel: FunctionalitiesViewModel
 
-    init(viewModel: UIComponentsViewModel) {
+    init(viewModel: FunctionalitiesViewModel) {
         self._viewModel = .init(wrappedValue: viewModel)
     }
 
     var body: some View {
         bodyContent
-        .background(Color.brandColor)
-        .navigationTitle("UIComponents")
-        .navigationBarTitleDisplayMode(.large)
-        .applyNavigation(coordinator: viewModel.coordinator)
-        .onAppear {
-            setupNavigationBarAppearance()
-        }
+            .background(Color.brandColor)
+            .navigationTitle("Funcionalidades")
+            .navigationBarTitleDisplayMode(.large)
+            .applyNavigation(coordinator: viewModel.coordinator)
     }
 }
 
-extension UIComponentsView {
+extension FunctionalitiesView {
     var bodyContent: some View {
         VStack {
             List(Array(viewModel.options.enumerated()), id: \.0) { index, option in
@@ -53,19 +50,13 @@ extension UIComponentsView {
 }
 
 // MARK: - Actions
-extension UIComponentsView {
+extension FunctionalitiesView {
     private func destinationView(for index: Int) {
         switch index {
         case 0:
-            viewModel.coordinator.navigateToLabel()
-        case 1:
-            viewModel.coordinator.navigateToImage()
+            viewModel.coordinator.navigateToDataBackward()
         default:
             print("No está implementado todavia")
         }
     }
-}
-
-#Preview {
-    UIComponentsView(viewModel: .init(coordinator: .init(container: .init())))
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class FunctionalitiesCoordinator: ObservableObject {
-    @Published var path: [UIComponentsRoute] = []
+    @Published var path: [FunctionalitiesRoute] = []
 
     private let container: Container
     init(container: Container) {
@@ -18,20 +18,25 @@ final class FunctionalitiesCoordinator: ObservableObject {
     func goBack() {
         path.removeLast()
     }
-    
-    func navigateToFirst() {
-        path.append(UIComponentsRoute.label)
+
+    func navigateToDataBackward() {
+        path.append(FunctionalitiesRoute.dataBackward)
+    }
+
+    func navigateToDataBackwardFavorite(isFavorite: Binding<Bool>) {
+        let bindableBool = BindableBool(binding: isFavorite)
+        path.append(FunctionalitiesRoute.dataBackwardFavorite(bindableBool))
     }
 }
 
 extension FunctionalitiesCoordinator: Coordinator {
     @ViewBuilder
-    func redirect(_ path: UIComponentsRoute) -> some View {
+    func redirect(_ path: FunctionalitiesRoute) -> some View {
         switch path {
-        case .label:
-            let viewModel = FunctionalitiesViewModel(coordinator: self)
-            FunctionalitiesView(viewModel: viewModel)
+        case .dataBackward:
+            container.obtenerUna(DataBackwardView.self, argument: self)
+        case .dataBackwardFavorite(let bindableBool):
+            container.obtenerDos(FavoriteView.self, argument1: self, argument2: bindableBool)
         }
     }
 }
-
