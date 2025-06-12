@@ -21,10 +21,6 @@ struct MyConcatText: View {
                 .foregroundColor(styledText.textColor)
         }
         .concat()
-        
-//        Text(style.text)
-//            .font(style.font)
-//            .foregroundColor(style.textColor)
     }
 }
 
