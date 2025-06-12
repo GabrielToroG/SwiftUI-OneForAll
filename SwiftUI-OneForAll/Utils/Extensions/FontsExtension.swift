@@ -18,6 +18,8 @@ extension Fonts {
         // Heading fonts
         static let heading1 = font(for: Heading.heading1)
         static let heading2 = font(for: Heading.heading2)
+        static let heading3 = font(for: Heading.heading3)
+        static let heading4 = font(for: Heading.heading4)
         
         // Body fonts
         static let body1 = font(for: Body.body1)

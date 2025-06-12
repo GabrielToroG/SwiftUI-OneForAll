@@ -64,7 +64,7 @@ extension ImageView {
                 image
                     .resizable()
                     .frame(width: Dimensions.Images.bigSize, height: Dimensions.Images.bigSize)
-            case .failure(let error):
+            case .failure(_):
                 Image(systemName: "photo")
                     .resizable()
                     .scaledToFit()

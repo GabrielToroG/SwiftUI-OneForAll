@@ -54,7 +54,9 @@ extension FunctionalitiesView {
     private func destinationView(for index: Int) {
         switch index {
         case 0:
-            viewModel.coordinator.navigateToDataBackward()
+            viewModel.coordinator.goToCustomHeader()
+        case 1:
+            viewModel.coordinator.goToDataBackward()
         default:
             print("No está implementado todavia")
         }

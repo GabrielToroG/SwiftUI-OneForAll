@@ -8,6 +8,7 @@
 import SwiftUI
 
 enum FunctionalitiesRoute: Route {
+    case customHeader
     case dataBackward
     case dataBackwardFavorite(BindableBool)
 }

@@ -57,6 +57,12 @@ enum Fonts {
         static let regularSize12 = UIFont.systemFont(ofSize: 12, weight: .regular)
         static let regularSize11 = UIFont.systemFont(ofSize: 11, weight: .regular)
         static let regularSize10 = UIFont.systemFont(ofSize: 10, weight: .regular)
+
+        static let lightSize14 = UIFont.systemFont(ofSize: 14, weight: .light)
+        static let lightSize13 = UIFont.systemFont(ofSize: 13, weight: .light)
+        static let lightSize12 = UIFont.systemFont(ofSize: 12, weight: .light)
+        static let lightSize11 = UIFont.systemFont(ofSize: 11, weight: .light)
+        static let lightSize10 = UIFont.systemFont(ofSize: 10, weight: .light)
     }
     
     enum Heading {
@@ -64,6 +70,10 @@ enum Fonts {
         static let heading1 = UIFont(name: FontName.Montserrat.semiBold, size: 30) ?? SysFont.semiboldSize30
         /// Montserrat semibold 16
         static let heading2 = UIFont(name: FontName.Montserrat.semiBold, size: 16) ?? SysFont.semiboldSize16
+        /// Montserrat regular 14
+        static let heading3 = UIFont(name: FontName.Montserrat.regular, size: 14) ?? SysFont.regularSize14
+        /// Montserrat light 14
+        static let heading4 = UIFont(name: FontName.Montserrat.light, size: 14) ?? SysFont.lightSize14
         /// Montserrat regular 16
         static let backButton = UIFont(name: FontName.Montserrat.regular, size: 16) ?? SysFont.regularSize16
     }

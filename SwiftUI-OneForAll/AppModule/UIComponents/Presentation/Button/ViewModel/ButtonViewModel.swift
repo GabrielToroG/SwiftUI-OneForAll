@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+final class ButtonViewModel: ObservableObject {
+    @Published var coordinator: UIComponentsCoordinator
+
+    init(coordinator: UIComponentsCoordinator) {
+        self.coordinator = coordinator
+    }
+}

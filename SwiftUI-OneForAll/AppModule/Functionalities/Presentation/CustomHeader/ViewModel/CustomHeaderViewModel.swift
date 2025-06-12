@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+final class CustomHeaderViewModel: ObservableObject {
+    // Init
+    @Published var coordinator: FunctionalitiesCoordinator
+
+    init(coordinator: FunctionalitiesCoordinator) {
+        self.coordinator = coordinator
+    }
+}

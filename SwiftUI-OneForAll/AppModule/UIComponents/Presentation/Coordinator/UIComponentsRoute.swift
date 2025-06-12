@@ -10,4 +10,5 @@ import Foundation
 enum UIComponentsRoute: Route {
     case label
     case image
+    case button
 }

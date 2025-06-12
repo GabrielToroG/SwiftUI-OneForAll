@@ -52,5 +52,15 @@ private extension UIComponentsModule {
             let viewModel = resolver.obtenerUna(ImageViewModel.self, argument: coordinator)!
             return ImageView(viewModel: viewModel)
         }
+
+        // MARK: - Button
+        container.registrarUna(ButtonViewModel.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            ButtonViewModel(coordinator: coordinator)
+        }
+
+        container.registrarUna(ButtonView.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            let viewModel = resolver.obtenerUna(ButtonViewModel.self, argument: coordinator)!
+            return ButtonView(viewModel: viewModel)
+        }
     }
 }

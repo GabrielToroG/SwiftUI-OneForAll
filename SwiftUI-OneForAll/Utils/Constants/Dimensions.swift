@@ -7,6 +7,15 @@
 
 import Foundation
 
+
+   
+/// 1. Zero
+/// 2. Tiny
+/// 3. Small
+/// 4. Normal
+/// 5. Medium
+/// 6. Large
+/// 7. ExtraLarge
 enum Dimensions {
     enum Margin {
         /// CGFloat = 0
@@ -70,16 +79,20 @@ enum Dimensions {
     }
 }
 
+// MARK: - SwiftUI
 extension Dimensions {
-    enum StackView {
+    enum Stacks {
         /// CGFloat = 4
-        static let tinySpacing: CGFloat = 4
+        static let tiny: CGFloat = 4
         /// CGFloat = 8
-        static let smallSpacing: CGFloat = 8
+        static let small: CGFloat = 8
         /// CGFloat = 16
-        static let normalSpacing: CGFloat = 16
+        static let normal: CGFloat = 16
     }
+}
 
+// MARK: - UIKit
+extension Dimensions {
     enum View {
         /// CGFloat = 40
         static let smallSize: CGFloat = 40
@@ -166,12 +179,16 @@ extension Dimensions {
     }
 
     enum Icon {
+        /// CGFloat = 2
+        static let tinySmall: CGFloat = 20
         /// CGFloat = 24
         static let smallSize: CGFloat = 24
         /// CGFloat = 28
         static let normalSize: CGFloat = 28
         /// CGFloat = 32
         static let mediumSize: CGFloat = 32
+        /// CGFloat = 36
+        static let largeSize: CGFloat = 36
     }
 
     enum Images {

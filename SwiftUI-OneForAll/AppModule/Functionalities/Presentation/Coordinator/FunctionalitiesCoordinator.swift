@@ -19,11 +19,15 @@ final class FunctionalitiesCoordinator: ObservableObject {
         path.removeLast()
     }
 
-    func navigateToDataBackward() {
+    func goToCustomHeader() {
+        path.append(FunctionalitiesRoute.customHeader)
+    }
+
+    func goToDataBackward() {
         path.append(FunctionalitiesRoute.dataBackward)
     }
 
-    func navigateToDataBackwardFavorite(isFavorite: Binding<Bool>) {
+    func goToDataBackwardFavorite(isFavorite: Binding<Bool>) {
         let bindableBool = BindableBool(binding: isFavorite)
         path.append(FunctionalitiesRoute.dataBackwardFavorite(bindableBool))
     }
@@ -33,6 +37,8 @@ extension FunctionalitiesCoordinator: Coordinator {
     @ViewBuilder
     func redirect(_ path: FunctionalitiesRoute) -> some View {
         switch path {
+        case .customHeader:
+            container.obtenerUna(CustomHeaderView.self, argument: self)
         case .dataBackward:
             container.obtenerUna(DataBackwardView.self, argument: self)
         case .dataBackwardFavorite(let bindableBool):

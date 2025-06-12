@@ -33,6 +33,15 @@ private extension FunctionalitiesModule {
             return FunctionalitiesView(viewModel: viewModel)
         }
 
+        container.registrarUna(CustomHeaderViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
+            CustomHeaderViewModel(coordinator: coordinator)
+        }
+
+        container.registrarUna(CustomHeaderView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
+            let viewModel = resolver.obtenerUna(CustomHeaderViewModel.self, argument: coordinator)!
+            return CustomHeaderView(viewModel: viewModel)
+        }
+
         container.registrarUna(DataBackwardViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
             DataBackwardViewModel(coordinator: coordinator)
         }

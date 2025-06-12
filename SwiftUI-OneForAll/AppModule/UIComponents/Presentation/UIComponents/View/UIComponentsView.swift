@@ -60,6 +60,8 @@ extension UIComponentsView {
             viewModel.coordinator.navigateToLabel()
         case 1:
             viewModel.coordinator.navigateToImage()
+        case 2:
+            viewModel.coordinator.navigateToButton()
         default:
             print("No está implementado todavia")
         }
