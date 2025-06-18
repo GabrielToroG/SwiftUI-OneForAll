@@ -82,7 +82,6 @@ extension ImageView {
     var toolbarLeading: some View {
         Button {
             viewModel.coordinator.goBack()
-            print("AJAJAJA")
         } label: {
             HStack {
                 Text("< ")

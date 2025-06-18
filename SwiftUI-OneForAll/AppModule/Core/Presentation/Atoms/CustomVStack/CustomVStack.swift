@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Spacing 16 & Padding 16
 struct CustomVStack<Content: View>: View {
     let alignment: HorizontalAlignment
     let spacing: CGFloat?

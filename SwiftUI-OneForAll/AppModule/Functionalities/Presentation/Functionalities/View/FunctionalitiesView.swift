@@ -57,6 +57,8 @@ extension FunctionalitiesView {
             viewModel.coordinator.goToCustomHeader()
         case 1:
             viewModel.coordinator.goToDataBackward()
+        case 2:
+            viewModel.coordinator.goToSwiftData()
         default:
             print("No está implementado todavia")
         }

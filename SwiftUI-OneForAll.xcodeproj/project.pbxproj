@@ -37,6 +37,8 @@
 		7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */; };
 		7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81442D40B47100C8CB43 /* ColorExtension.swift */; };
 		7F1A814A2D42183600C8CB43 /* UIComponentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81492D42183600C8CB43 /* UIComponentOption.swift */; };
+		7F72FDB52E02611600D0633D /* SwiftDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72FDB42E02611600D0633D /* SwiftDataView.swift */; };
+		7F72FDB72E02623300D0633D /* SwiftDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72FDB62E02623200D0633D /* SwiftDataViewModel.swift */; };
 		7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8E82D430763009E8201 /* UIColorExtension.swift */; };
 		7FA6B8F12D430D07009E8201 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F02D430D07009E8201 /* Font.swift */; };
 		7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F22D44392D009E8201 /* Dimensions.swift */; };
@@ -99,6 +101,8 @@
 		7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesView.swift; sourceTree = "<group>"; };
 		7F1A81442D40B47100C8CB43 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		7F1A81492D42183600C8CB43 /* UIComponentOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentOption.swift; sourceTree = "<group>"; };
+		7F72FDB42E02611600D0633D /* SwiftDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataView.swift; sourceTree = "<group>"; };
+		7F72FDB62E02623200D0633D /* SwiftDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataViewModel.swift; sourceTree = "<group>"; };
 		7FA6B8E82D430763009E8201 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		7FA6B8EE2D430CD9009E8201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA6B8F02D430D07009E8201 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -389,6 +393,7 @@
 				7F1A81382D40753C00C8CB43 /* Functionalities */,
 				7FCC9E522DE1872B00F25C68 /* CustomHeader */,
 				7FA6B9142D45EE0E009E8201 /* DataBackward */,
+				7F72FDAE2E0260D500D0633D /* SwiftData */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -474,6 +479,31 @@
 			isa = PBXGroup;
 			children = (
 				7F1A813F2D40761900C8CB43 /* FunctionalitiesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F72FDAE2E0260D500D0633D /* SwiftData */ = {
+			isa = PBXGroup;
+			children = (
+				7F72FDAF2E0260EA00D0633D /* View */,
+				7F72FDB02E0260EE00D0633D /* ViewModel */,
+			);
+			path = SwiftData;
+			sourceTree = "<group>";
+		};
+		7F72FDAF2E0260EA00D0633D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F72FDB42E02611600D0633D /* SwiftDataView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F72FDB02E0260EE00D0633D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F72FDB62E02623200D0633D /* SwiftDataViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -801,8 +831,10 @@
 				7F1A81402D40761900C8CB43 /* FunctionalitiesViewModel.swift in Sources */,
 				7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */,
 				7FA6B8FC2D444144009E8201 /* LabelViewModel.swift in Sources */,
+				7F72FDB72E02623300D0633D /* SwiftDataViewModel.swift in Sources */,
 				7FCC9E512DDFDDEB00F25C68 /* SafeAreaCustomVStack.swift in Sources */,
 				7FA6B9052D44B4DE009E8201 /* FontsExtension.swift in Sources */,
+				7F72FDB52E02611600D0633D /* SwiftDataView.swift in Sources */,
 				7F1A811F2D406EA100C8CB43 /* MainTabModule.swift in Sources */,
 				7F1A81162D403C8700C8CB43 /* MainControllerProvider.swift in Sources */,
 				7FCC9E562DE1876B00F25C68 /* CustomHeaderView.swift in Sources */,

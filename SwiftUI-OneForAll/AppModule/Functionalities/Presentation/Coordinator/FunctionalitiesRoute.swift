@@ -11,6 +11,7 @@ enum FunctionalitiesRoute: Route {
     case customHeader
     case dataBackward
     case dataBackwardFavorite(BindableBool)
+    case swiftData
 }
 
 struct BindableBool: Hashable {
