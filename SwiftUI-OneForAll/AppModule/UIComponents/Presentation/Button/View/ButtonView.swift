@@ -13,21 +13,33 @@ struct ButtonView: View {
 }
 
 extension ButtonView {
-    
     var bodyContent: some View {
-        VStack(spacing: Dimensions.Stacks.small) {
-            MyButton(text: "Filled Button", style: .filled) {
-                print("JAA")
-            }
+        VStack(spacing: Dimensions.Stacks.normal) {
+            MyButton(
+                text: "Filled Button",
+                style: .filled
+            ) {}
 
-            MyButton(text: "Filled Shadow Button", style: .filledShadow) {
-                print("JAA")
-            }
+            MyButton(
+                text: "Filled Shadow Button",
+                style: .filledShadow
+            ) {}
+
+            MyButton(
+                text: "Bordered Button",
+                style: .bordered
+            ) {}
+
+            IconTextButton(
+                icon: Assets.Images.General.checkIcon,
+                text: "Botón",
+            ) {}
 
             IconButton(
-                icon: Assets.Images.General.checkIcon,
-                action: {print("ASD")})
+                icon: Assets.Images.General.checkIcon
+            ) {}
         }
+        .padding(.horizontal, Dimensions.Margin.small)
     }
 }
 

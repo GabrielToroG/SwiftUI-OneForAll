@@ -10,8 +10,9 @@ import Foundation
 final class FunctionalitiesViewModel: ObservableObject {
     // Properties
     let options: [UIFunctionalitiesOption] = [
-        UIFunctionalitiesOption(icon: "functionalities.button.header", title: "Header Custom"),
-        UIFunctionalitiesOption(icon: "functionalities.button.backward", title: "Compartir data hacia atrás")
+        UIFunctionalitiesOption(icon: "functional.header.option", title: "Header Custom"),
+        UIFunctionalitiesOption(icon: "functional.backward.option", title: "Compartir data hacia atrás"),
+        UIFunctionalitiesOption(icon: "functional.swiftdata.option", title: "SwiftData")
     ]
 
     // Init

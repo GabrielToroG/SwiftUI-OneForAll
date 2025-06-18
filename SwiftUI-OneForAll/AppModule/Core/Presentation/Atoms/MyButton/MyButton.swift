@@ -46,6 +46,26 @@ struct MyButton: View {
             .background(Color.brownColor)
             .cornerRadius(Dimensions.BorderRadius.medium)
             .shadow(color: Color.blackColor.opacity(0.2), radius: 1, x: .zero, y: 4)
+            
+        case .bordered:
+            Button {
+                action()
+            } label: {
+                MyText(
+                    text: text,
+                    font: Fonts.SwiftUIFont.button1,
+                    lines: 1,
+                    textColor: Color.blackColor
+                )
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: Dimensions.Button.Height.normal)
+            .background(Color.clear)
+            .cornerRadius(Dimensions.BorderRadius.medium)
+            .overlay(
+                RoundedRectangle(
+                    cornerRadius: Dimensions.BorderRadius.medium
+                ).stroke(Color.blackColor, lineWidth: 1))
         }
     }
 }
@@ -54,5 +74,5 @@ struct MyButton: View {
 enum MyButtonStyle {
     case filled
     case filledShadow
-//    case bordered
+    case bordered
 }

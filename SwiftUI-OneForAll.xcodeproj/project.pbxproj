@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F093F7F2DFB6B9500128642 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F093F7E2DFB6B9500128642 /* IconTextButton.swift */; };
 		7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */; };
 		7F1A80EC2D3FF10B00C8CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */; };
 		7F1A80EF2D3FF10B00C8CB43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EE2D3FF10B00C8CB43 /* Preview Assets.xcassets */; };
@@ -67,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F093F7E2DFB6B9500128642 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
 		7F1A80E42D3FF10A00C8CB43 /* SwiftUI-OneForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-OneForAll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_OneForAllApp.swift; sourceTree = "<group>"; };
 		7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +141,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F093F7C2DFB6B4100128642 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				7F093F7D2DFB6B6D00128642 /* IconTextButton */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		7F093F7D2DFB6B6D00128642 /* IconTextButton */ = {
+			isa = PBXGroup;
+			children = (
+				7F093F7E2DFB6B9500128642 /* IconTextButton.swift */,
+			);
+			path = IconTextButton;
+			sourceTree = "<group>";
+		};
 		7F1A80DB2D3FF10A00C8CB43 = {
 			isa = PBXGroup;
 			children = (
@@ -508,6 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA6B9082D455EF7009E8201 /* Atoms */,
+				7F093F7C2DFB6B4100128642 /* Molecules */,
 				7FA6B8FE2D4453A5009E8201 /* Organisms */,
 			);
 			path = Presentation;
@@ -798,6 +817,7 @@
 				7FE79E152D9083EF00E30088 /* MyButton.swift in Sources */,
 				7F1A811D2D406E8A00C8CB43 /* MainTabCoordinator.swift in Sources */,
 				7F1A81352D40749A00C8CB43 /* UIComponentsViewModel.swift in Sources */,
+				7F093F7F2DFB6B9500128642 /* IconTextButton.swift in Sources */,
 				7F1A81122D403C7700C8CB43 /* Container.swift in Sources */,
 				7FA6B9112D45B4BF009E8201 /* ImageViewModel.swift in Sources */,
 				7F1A81142D403C7F00C8CB43 /* Injection.swift in Sources */,
