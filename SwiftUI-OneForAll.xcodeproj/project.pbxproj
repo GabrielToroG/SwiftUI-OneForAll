@@ -231,8 +231,8 @@
 			children = (
 				7F1A810F2D403B8E00C8CB43 /* Core */,
 				7F1A81172D403D1000C8CB43 /* MainTab */,
-				7F1A81232D40730600C8CB43 /* UIComponents */,
-				7F1A81262D40735D00C8CB43 /* Functionalities */,
+				7F1A81232D40730600C8CB43 /* UIComponentsKit */,
+				7F1A81262D40735D00C8CB43 /* FunctionalitiesKit */,
 			);
 			path = AppModule;
 			sourceTree = "<group>";
@@ -338,13 +338,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7F1A81232D40730600C8CB43 /* UIComponents */ = {
+		7F1A81232D40730600C8CB43 /* UIComponentsKit */ = {
 			isa = PBXGroup;
 			children = (
-				7F1A81242D40735100C8CB43 /* DI */,
-				7F1A81252D40735500C8CB43 /* Presentation */,
+				7F72FDBE2E028A7E00D0633D /* Shared */,
+				7FA6B8F62D44410B009E8201 /* UIComponents */,
+				7FA6B8F52D4440FD009E8201 /* Label */,
+				7FA6B90D2D45B4A5009E8201 /* Image */,
+				7FE79DF82D90745200E30088 /* Button */,
 			);
-			path = UIComponents;
+			path = UIComponentsKit;
 			sourceTree = "<group>";
 		};
 		7F1A81242D40735100C8CB43 /* DI */ = {
@@ -355,26 +358,16 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
-		7F1A81252D40735500C8CB43 /* Presentation */ = {
+		7F1A81262D40735D00C8CB43 /* FunctionalitiesKit */ = {
 			isa = PBXGroup;
 			children = (
-				7F1A81482D4217FA00C8CB43 /* Entity */,
-				7F1A812B2D4073BE00C8CB43 /* Coordinator */,
-				7FA6B8F62D44410B009E8201 /* UIComponents */,
-				7FA6B8F52D4440FD009E8201 /* Label */,
-				7FA6B90D2D45B4A5009E8201 /* Image */,
-				7FE79DF82D90745200E30088 /* Button */,
+				7F72FDBC2E0289FB00D0633D /* Shared */,
+				7F1A81382D40753C00C8CB43 /* Functionalities */,
+				7FCC9E522DE1872B00F25C68 /* CustomHeader */,
+				7FA6B9142D45EE0E009E8201 /* DataBackward */,
+				7F72FDAE2E0260D500D0633D /* SwiftData */,
 			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		7F1A81262D40735D00C8CB43 /* Functionalities */ = {
-			isa = PBXGroup;
-			children = (
-				7F1A81272D40737600C8CB43 /* DI */,
-				7F1A81282D40737900C8CB43 /* Presentation */,
-			);
-			path = Functionalities;
+			path = FunctionalitiesKit;
 			sourceTree = "<group>";
 		};
 		7F1A81272D40737600C8CB43 /* DI */ = {
@@ -383,19 +376,6 @@
 				7F1A81362D40752700C8CB43 /* FunctionalitiesModule.swift */,
 			);
 			path = DI;
-			sourceTree = "<group>";
-		};
-		7F1A81282D40737900C8CB43 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				7FA6B9192D45F186009E8201 /* Entity */,
-				7F1A813A2D40754500C8CB43 /* Coordinator */,
-				7F1A81382D40753C00C8CB43 /* Functionalities */,
-				7FCC9E522DE1872B00F25C68 /* CustomHeader */,
-				7FA6B9142D45EE0E009E8201 /* DataBackward */,
-				7F72FDAE2E0260D500D0633D /* SwiftData */,
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 		7F1A812B2D4073BE00C8CB43 /* Coordinator */ = {
@@ -426,8 +406,7 @@
 		7F1A81382D40753C00C8CB43 /* Functionalities */ = {
 			isa = PBXGroup;
 			children = (
-				7F64135C2D484B450066458B /* View */,
-				7F64135D2D484B480066458B /* ViewModel */,
+				7F72FDC12E028AF300D0633D /* Presentation */,
 			);
 			path = Functionalities;
 			sourceTree = "<group>";
@@ -486,8 +465,7 @@
 		7F72FDAE2E0260D500D0633D /* SwiftData */ = {
 			isa = PBXGroup;
 			children = (
-				7F72FDAF2E0260EA00D0633D /* View */,
-				7F72FDB02E0260EE00D0633D /* ViewModel */,
+				7F72FDC42E028B1300D0633D /* Presentation */,
 			);
 			path = SwiftData;
 			sourceTree = "<group>";
@@ -508,6 +486,114 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		7F72FDBC2E0289FB00D0633D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A81272D40737600C8CB43 /* DI */,
+				7F72FDBF2E028A9900D0633D /* Presentation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7F72FDBE2E028A7E00D0633D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A81242D40735100C8CB43 /* DI */,
+				7F72FDC02E028AA500D0633D /* Presentation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7F72FDBF2E028A9900D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A813A2D40754500C8CB43 /* Coordinator */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC02E028AA500D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A812B2D4073BE00C8CB43 /* Coordinator */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC12E028AF300D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B9192D45F186009E8201 /* Entity */,
+				7F64135C2D484B450066458B /* View */,
+				7F64135D2D484B480066458B /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC22E028B0100D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7FCC9E532DE1874E00F25C68 /* View */,
+				7FCC9E542DE1875400F25C68 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC32E028B0A00D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7F64135A2D484AF90066458B /* View */,
+				7F64135B2D484AFD0066458B /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC42E028B1300D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7F72FDAF2E0260EA00D0633D /* View */,
+				7F72FDB02E0260EE00D0633D /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC52E028B2300D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7F1A81482D4217FA00C8CB43 /* Entity */,
+				7F1A81332D40748B00C8CB43 /* ViewModel */,
+				7F1A81302D40747C00C8CB43 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC62E028B2B00D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B8F82D44412E009E8201 /* ViewModel */,
+				7FA6B8F72D444128009E8201 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC72E028B3400D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7FA6B90F2D45B4B6009E8201 /* ViewModel */,
+				7FA6B90E2D45B4B3009E8201 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F72FDC82E028B3C00D0633D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7FE79DFA2D90746400E30088 /* ViewModel */,
+				7FE79DF92D90746000E30088 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		7FA6B8EF2D430CFE009E8201 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,8 +607,7 @@
 		7FA6B8F52D4440FD009E8201 /* Label */ = {
 			isa = PBXGroup;
 			children = (
-				7FA6B8F82D44412E009E8201 /* ViewModel */,
-				7FA6B8F72D444128009E8201 /* View */,
+				7F72FDC62E028B2B00D0633D /* Presentation */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -530,8 +615,7 @@
 		7FA6B8F62D44410B009E8201 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				7F1A81332D40748B00C8CB43 /* ViewModel */,
-				7F1A81302D40747C00C8CB43 /* View */,
+				7F72FDC52E028B2300D0633D /* Presentation */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -595,8 +679,7 @@
 		7FA6B90D2D45B4A5009E8201 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				7FA6B90F2D45B4B6009E8201 /* ViewModel */,
-				7FA6B90E2D45B4B3009E8201 /* View */,
+				7F72FDC72E028B3400D0633D /* Presentation */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -620,8 +703,7 @@
 		7FA6B9142D45EE0E009E8201 /* DataBackward */ = {
 			isa = PBXGroup;
 			children = (
-				7F64135A2D484AF90066458B /* View */,
-				7F64135B2D484AFD0066458B /* ViewModel */,
+				7F72FDC32E028B0A00D0633D /* Presentation */,
 			);
 			path = DataBackward;
 			sourceTree = "<group>";
@@ -653,8 +735,7 @@
 		7FCC9E522DE1872B00F25C68 /* CustomHeader */ = {
 			isa = PBXGroup;
 			children = (
-				7FCC9E532DE1874E00F25C68 /* View */,
-				7FCC9E542DE1875400F25C68 /* ViewModel */,
+				7F72FDC22E028B0100D0633D /* Presentation */,
 			);
 			path = CustomHeader;
 			sourceTree = "<group>";
@@ -678,8 +759,7 @@
 		7FE79DF82D90745200E30088 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				7FE79DFA2D90746400E30088 /* ViewModel */,
-				7FE79DF92D90746000E30088 /* View */,
+				7F72FDC82E028B3C00D0633D /* Presentation */,
 			);
 			path = Button;
 			sourceTree = "<group>";
