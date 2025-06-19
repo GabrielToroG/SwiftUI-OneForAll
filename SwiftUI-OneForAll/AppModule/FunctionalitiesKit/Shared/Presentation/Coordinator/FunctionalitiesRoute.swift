@@ -12,6 +12,7 @@ enum FunctionalitiesRoute: Route {
     case dataBackward
     case dataBackwardFavorite(BindableBool)
     case swiftData
+    case swiftDataFavorite(UiSwiftDataVideo)
 }
 
 struct BindableBool: Hashable {
@@ -24,6 +25,20 @@ struct BindableBool: Hashable {
 
     // Equatable
     static func == (lhs: BindableBool, rhs: BindableBool) -> Bool {
+        lhs.binding.wrappedValue == rhs.binding.wrappedValue
+    }
+}
+
+struct BindableValue<T: Hashable & Equatable>: Hashable {
+    var binding: Binding<T>
+
+    // Hashable
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(binding.wrappedValue)
+    }
+
+    // Equatable
+    static func == (lhs: BindableValue<T>, rhs: BindableValue<T>) -> Bool {
         lhs.binding.wrappedValue == rhs.binding.wrappedValue
     }
 }

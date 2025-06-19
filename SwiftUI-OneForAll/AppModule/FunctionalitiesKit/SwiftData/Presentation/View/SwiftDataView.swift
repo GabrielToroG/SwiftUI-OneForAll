@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 /*
  - Todos los que quieren usar Swift Data tienen que estar
@@ -17,6 +18,8 @@ import SwiftUI
 struct SwiftDataView: View {
     
     @StateObject var viewModel: SwiftDataViewModel
+    @Environment(\.modelContext) var modelContext
+    @Query(sort: \UiSwiftDataVideo.title) var videos: [UiSwiftDataVideo]
     
     init(viewModel: SwiftDataViewModel) {
         self._viewModel = .init(wrappedValue: viewModel)
@@ -25,13 +28,56 @@ struct SwiftDataView: View {
     var body: some View {
         bodyContent
             .applyNavigation(coordinator: viewModel.coordinator)
+            .toolbarTrailing { toolbarTrailing }
     }
 }
 
 extension SwiftDataView {
     var bodyContent: some View {
-        CustomVStack {
-            Text("")
+        List {
+            ForEach(videos) { video in
+                HStack {
+                    Text(video.title)
+                    if video.metadata.isFavorite {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                    }
+                }
+                .onTapGesture {
+                    viewModel.coordinator.goSwiftDataFavorite(video: video)
+                }
+            }
         }
+    }
+}
+
+extension SwiftDataView {
+    var toolbarTrailing: some View {
+        HStack {
+            Button {
+                withAnimation {
+                    let newVideo = UiSwiftDataVideo(
+                        id: .init(),
+                        title: "Test",
+                        metadata: .init(isFavorite: true)
+                    )
+                    modelContext.insert(newVideo)
+                }
+            } label: {
+                Label("add Item", systemImage: "plus")
+            }
+
+            Button {
+                withAnimation {
+                    videos.forEach {
+                        modelContext.delete($0)
+                    }
+                    try? modelContext.save()
+                }
+            } label: {
+                Label("Remove Item", systemImage: "trash")
+            }
+        }
+        
     }
 }

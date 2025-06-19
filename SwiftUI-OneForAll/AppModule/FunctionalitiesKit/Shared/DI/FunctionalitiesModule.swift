@@ -17,6 +17,7 @@ final class FunctionalitiesModule {
         injectFunctionalitiesModule()
         injectCustomHeaderModule()
         injectDataBackwardModule()
+        injectSwiftDataModule()
     }
 }
 
@@ -81,6 +82,15 @@ private extension FunctionalitiesModule {
         container.registrarUna(SwiftDataView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
             let viewModel = resolver.obtenerUna(SwiftDataViewModel.self, argument: coordinator)!
             return SwiftDataView(viewModel: viewModel)
+        }
+
+        container.registrarDos(SwiftDataFavoriteViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator, video: UiSwiftDataVideo) in
+            SwiftDataFavoriteViewModel(coordinator: coordinator, video: video)
+        }
+
+        container.registrarDos(SwiftDataFavoriteView.self) { (resolver, coordinator: FunctionalitiesCoordinator, video: UiSwiftDataVideo) in
+            let viewModel = resolver.obtenerDos(SwiftDataFavoriteViewModel.self, argument1: coordinator, argument2: video)!
+            return SwiftDataFavoriteView(viewModel: viewModel)
         }
     }
 }

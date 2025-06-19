@@ -35,6 +35,10 @@ final class FunctionalitiesCoordinator: ObservableObject {
     func goToSwiftData() {
         path.append(FunctionalitiesRoute.swiftData)
     }
+
+    func goSwiftDataFavorite(video: UiSwiftDataVideo) {
+        path.append(FunctionalitiesRoute.swiftDataFavorite(video))
+    }
 }
 
 extension FunctionalitiesCoordinator: Coordinator {
@@ -49,6 +53,8 @@ extension FunctionalitiesCoordinator: Coordinator {
             container.obtenerDos(FavoriteView.self, argument1: self, argument2: bindableBool)
         case .swiftData:
             container.obtenerUna(SwiftDataView.self, argument: self)
+        case .swiftDataFavorite(let bindableValue):
+            container.obtenerDos(SwiftDataFavoriteView.self, argument1: self, argument2: bindableValue)
         }
     }
 }
