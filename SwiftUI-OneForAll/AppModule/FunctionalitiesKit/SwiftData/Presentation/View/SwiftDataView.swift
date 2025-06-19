@@ -18,8 +18,6 @@ import SwiftData
 struct SwiftDataView: View {
     
     @StateObject var viewModel: SwiftDataViewModel
-    @Environment(\.modelContext) var modelContext
-    @Query(sort: \UiSwiftDataVideo.title) var videos: [UiSwiftDataVideo]
     
     init(viewModel: SwiftDataViewModel) {
         self._viewModel = .init(wrappedValue: viewModel)
@@ -35,7 +33,7 @@ struct SwiftDataView: View {
 extension SwiftDataView {
     var bodyContent: some View {
         List {
-            ForEach(videos) { video in
+            ForEach(viewModel.videos) { video in
                 HStack {
                     Text(video.title)
                     if video.metadata.isFavorite {
@@ -47,6 +45,8 @@ extension SwiftDataView {
                     viewModel.coordinator.goSwiftDataFavorite(video: video)
                 }
             }
+        }.onAppear {
+            viewModel.getVideos()
         }
     }
 }
@@ -61,7 +61,7 @@ extension SwiftDataView {
                         title: "Test",
                         metadata: .init(isFavorite: true)
                     )
-                    modelContext.insert(newVideo)
+                    viewModel.insert(video: newVideo)
                 }
             } label: {
                 Label("add Item", systemImage: "plus")
@@ -69,10 +69,7 @@ extension SwiftDataView {
 
             Button {
                 withAnimation {
-                    videos.forEach {
-                        modelContext.delete($0)
-                    }
-                    try? modelContext.save()
+                    viewModel.deleteAllVideos()
                 }
             } label: {
                 Label("Remove Item", systemImage: "trash")

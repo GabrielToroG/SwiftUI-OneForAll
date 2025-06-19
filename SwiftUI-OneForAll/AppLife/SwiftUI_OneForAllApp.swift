@@ -20,12 +20,5 @@ struct SwiftUI_OneForAllApp: App {
                 .environmentObject(coordinator)
                 .environmentObject(injection)
         }
-        // TODO: - Move later
-        .modelContainer(
-            for: [
-                UiSwiftDataVideo.self,
-                UiSwiftDataMeta.self
-            ]
-        )
     }
 }

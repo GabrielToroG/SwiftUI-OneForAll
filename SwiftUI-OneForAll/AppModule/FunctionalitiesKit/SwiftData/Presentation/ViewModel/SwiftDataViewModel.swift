@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 final class SwiftDataViewModel: ObservableObject {
     // Init
@@ -13,5 +14,40 @@ final class SwiftDataViewModel: ObservableObject {
 
     init(coordinator: FunctionalitiesCoordinator) {
         self.coordinator = coordinator
+    }
+    
+    let container = try! ModelContainer(for: UiSwiftDataVideo.self, UiSwiftDataMeta.self)
+    
+    @MainActor
+    var modelContext: ModelContext {
+        container.mainContext
+    }
+
+    @Published var videos: [UiSwiftDataVideo] = []
+    
+    
+    @MainActor
+    func getVideos() {
+        let fetchDescriptor = FetchDescriptor<UiSwiftDataVideo>(
+            predicate: nil,
+            sortBy: [SortDescriptor<UiSwiftDataVideo>(\.title)]
+        )
+        videos = try! modelContext.fetch(fetchDescriptor)
+    }
+
+    @MainActor
+    func insert(video: UiSwiftDataVideo) {
+        modelContext.insert(video)
+//        videos = []
+        getVideos()
+    }
+
+    @MainActor
+    func deleteAllVideos() {
+        videos.forEach {
+            modelContext.delete($0)
+        }
+//        videos = []
+        getVideos()
     }
 }
