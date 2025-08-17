@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftData
 
 final class Injection: ObservableObject {
     static let shared = Injection()
@@ -27,6 +28,12 @@ final class Injection: ObservableObject {
     
     func getContainer() -> Container {
         return container
+    }
+
+    func registerInitialDependencies(modelContext: ModelContext) {
+        container.registrar(ModelContext.self) { _ in
+            modelContext
+        }
     }
     
     func resolve<T>(_ serviceType: T.Type) -> T {

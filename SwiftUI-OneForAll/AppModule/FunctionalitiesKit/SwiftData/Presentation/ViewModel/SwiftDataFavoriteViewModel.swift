@@ -10,14 +10,21 @@ import SwiftUI
 final class SwiftDataFavoriteViewModel: ObservableObject {
     // Init
     @Published var coordinator: FunctionalitiesCoordinator
-//    @Published var videoState: UiSwiftDataVideo
-//    @Binding var video: UiSwiftDataVideo
-    var video: UiSwiftDataVideo
+    private var toggleFavoriteUseCase: ToggleFavoriteUseCase
+    @Published var video: UiSwiftDataVideo
     
-    init(coordinator: FunctionalitiesCoordinator, video: UiSwiftDataVideo) {
+    init(
+        coordinator: FunctionalitiesCoordinator,
+        video: UiSwiftDataVideo,
+        toggleFavorite: ToggleFavoriteUseCase
+    ) {
         self.coordinator = coordinator
         self.video = video
-//        self._video = video.binding
-//        self.videoState = video.binding.wrappedValue
+        self.toggleFavoriteUseCase = toggleFavorite
+    }
+
+    @MainActor
+    func toggleFavorite() async {
+        try? await toggleFavoriteUseCase.execute(id: video.id)
     }
 }

@@ -5,8 +5,6 @@
 //  Created by Gabriel Alonso Toro Guzmán on 21-01-25.
 //
 
-import SwiftUI
-
 final class FunctionalitiesModule {
     private let container: Container
     init(_ container: Container) {
@@ -15,9 +13,9 @@ final class FunctionalitiesModule {
 
     func inject() {
         injectFunctionalitiesModule()
-        injectCustomHeaderModule()
-        injectDataBackwardModule()
-        injectSwiftDataModule()
+        CustomHeaderModule(container).inject()
+        DataBackwardModule(container).inject()
+        SwiftDataModule(container).inject()
     }
 }
 
@@ -34,63 +32,6 @@ private extension FunctionalitiesModule {
         container.registrarUna(FunctionalitiesView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
             let viewModel = resolver.obtenerUna(FunctionalitiesViewModel.self, argument: coordinator)!
             return FunctionalitiesView(viewModel: viewModel)
-        }
-    }
-}
-
-private extension FunctionalitiesModule {
-    func injectCustomHeaderModule() {
-        container.registrarUna(CustomHeaderViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            CustomHeaderViewModel(coordinator: coordinator)
-        }
-        
-        container.registrarUna(CustomHeaderView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            let viewModel = resolver.obtenerUna(CustomHeaderViewModel.self, argument: coordinator)!
-            return CustomHeaderView(viewModel: viewModel)
-        }
-    }
-}
-
-private extension FunctionalitiesModule {
-    func injectDataBackwardModule() {
-        container.registrarUna(DataBackwardViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            DataBackwardViewModel(coordinator: coordinator)
-        }
-
-        container.registrarUna(DataBackwardView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            let viewModel = resolver.obtenerUna(DataBackwardViewModel.self, argument: coordinator)!
-            return DataBackwardView(viewModel: viewModel)
-        }
-
-        container.registrarDos(FavoriteViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator, isFavorite: BindableBool) in
-            FavoriteViewModel(coordinator: coordinator, isFavorite: isFavorite)
-        }
-
-        container.registrarDos(FavoriteView.self) { (resolver, coordinator: FunctionalitiesCoordinator, isFavorite: BindableBool) in
-            let viewModel = resolver.obtenerDos(FavoriteViewModel.self, argument1: coordinator, argument2: isFavorite)!
-            return FavoriteView(viewModel: viewModel)
-        }
-    }
-}
-
-private extension FunctionalitiesModule {
-    func injectSwiftDataModule() {
-        container.registrarUna(SwiftDataViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            SwiftDataViewModel(coordinator: coordinator)
-        }
-        
-        container.registrarUna(SwiftDataView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            let viewModel = resolver.obtenerUna(SwiftDataViewModel.self, argument: coordinator)!
-            return SwiftDataView(viewModel: viewModel)
-        }
-
-        container.registrarDos(SwiftDataFavoriteViewModel.self) { (resolver, coordinator: FunctionalitiesCoordinator, video: UiSwiftDataVideo) in
-            SwiftDataFavoriteViewModel(coordinator: coordinator, video: video)
-        }
-
-        container.registrarDos(SwiftDataFavoriteView.self) { (resolver, coordinator: FunctionalitiesCoordinator, video: UiSwiftDataVideo) in
-            let viewModel = resolver.obtenerDos(SwiftDataFavoriteViewModel.self, argument1: coordinator, argument2: video)!
-            return SwiftDataFavoriteView(viewModel: viewModel)
         }
     }
 }

@@ -36,7 +36,7 @@ extension SwiftDataView {
             ForEach(viewModel.videos) { video in
                 HStack {
                     Text(video.title)
-                    if video.metadata.isFavorite {
+                    if video.isFavorite {
                         Image(systemName: "star.fill")
                             .foregroundColor(.yellow)
                     }
@@ -46,7 +46,9 @@ extension SwiftDataView {
                 }
             }
         }.onAppear {
-            viewModel.getVideos()
+            Task {
+                await viewModel.fetchVideos()
+            }
         }
     }
 }
@@ -55,21 +57,16 @@ extension SwiftDataView {
     var toolbarTrailing: some View {
         HStack {
             Button {
-                withAnimation {
-                    let newVideo = UiSwiftDataVideo(
-                        id: .init(),
-                        title: "Test",
-                        metadata: .init(isFavorite: true)
-                    )
-                    viewModel.insert(video: newVideo)
+                Task {
+                    await viewModel.addNewVideo()
                 }
             } label: {
                 Label("add Item", systemImage: "plus")
             }
 
             Button {
-                withAnimation {
-                    viewModel.deleteAllVideos()
+                Task {
+                    await viewModel.removeAllVideos()
                 }
             } label: {
                 Label("Remove Item", systemImage: "trash")

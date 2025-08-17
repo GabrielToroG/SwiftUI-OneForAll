@@ -14,20 +14,9 @@ import SwiftData
     - @Relationship: Establece relación entre 2 entidades de la bd
 */
 
-@Model // Esta entidad estará en nuestra bd
-class UiSwiftDataVideo {
-    @Attribute(.unique) var id: UUID
+struct UiSwiftDataVideo: Identifiable, Equatable, Hashable {
+    let id: UUID
     var title: String
-    @Transient var numberOfLikes: Int { title.count }
-    @Relationship(deleteRule: .cascade) var metadata: UiSwiftDataMeta
-
-    init(
-        id: UUID,
-        title: String,
-        metadata: UiSwiftDataMeta
-    ) {
-        self.id = id
-        self.title = title
-        self.metadata = metadata
-    }
+    var isFavorite: Bool
+    let numberOfLikes: Int
 }

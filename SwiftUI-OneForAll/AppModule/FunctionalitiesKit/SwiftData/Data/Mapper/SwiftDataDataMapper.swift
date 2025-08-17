@@ -1,11 +1,13 @@
 //
-//  SwiftDataMapper.swift
+//  SwiftDataDataMapper.swift
 //  SwiftUI-OneForAll
 //
 //  Created by Gabriel Alonso Toro Guzmán on 19-06-25.
 //
 
-protocol SwiftDataMapper {
-    func domainToData(_ value: DomainHomeMenuRequest) -> ApiHomeMenuRequest
-    func dataToDomain(_ value: ApiHomeMenu) -> DomainHomeMenu
+import Foundation
+
+protocol SwiftDataDataMapper {
+    func dataToDomain(_ value: [ApiSwiftDataVideo]) -> [DomainSwiftDataVideo]
+    func domainToData(_ value: DomainSwiftDataVideo) -> ApiSwiftDataVideo
 }

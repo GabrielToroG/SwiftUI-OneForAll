@@ -11,6 +11,13 @@ import SwiftData
 @main
 struct SwiftUI_OneForAllApp: App {
 
+    let modelContainer = try! ModelContainer(for: ApiSwiftDataVideo.self, ApiSwiftDataMeta.self)
+
+    init() {
+        let modelContext = modelContainer.mainContext
+        Injection.shared.registerInitialDependencies(modelContext: modelContext)
+    }
+
     @StateObject private var injection = Injection.shared
     @StateObject private var coordinator = MainTabCoordinator(container: Injection.shared.getContainer())
 
@@ -19,6 +26,7 @@ struct SwiftUI_OneForAllApp: App {
             coordinator.startView()
                 .environmentObject(coordinator)
                 .environmentObject(injection)
+                .modelContainer(modelContainer)
         }
     }
 }

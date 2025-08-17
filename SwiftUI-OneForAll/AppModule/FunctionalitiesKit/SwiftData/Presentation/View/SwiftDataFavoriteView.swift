@@ -21,10 +21,14 @@ struct SwiftDataFavoriteView: View {
                 "Editar el próximo video de Swift",
                 text: $viewModel.video.title
             )
-            Toggle("Video favorito", isOn: $viewModel.video.metadata.isFavorite)
+            Toggle("Video favorito", isOn: $viewModel.video.isFavorite)
+                .onChange(of: viewModel.video.isFavorite, { oldValue, newValue in
+                    Task {
+                        await viewModel.toggleFavorite()
+                    }
+                })
         }
-
-            .applyNavigation(coordinator: viewModel.coordinator)
+        .applyNavigation(coordinator: viewModel.coordinator)
     }
 }
 

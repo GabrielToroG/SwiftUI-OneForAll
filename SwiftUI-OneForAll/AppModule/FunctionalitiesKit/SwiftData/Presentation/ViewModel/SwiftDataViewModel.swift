@@ -8,46 +8,79 @@
 import SwiftUI
 import SwiftData
 
-final class SwiftDataViewModel: ObservableObject {
-    // Init
-    @Published var coordinator: FunctionalitiesCoordinator
+protocol SwiftDataPresentationMapper {
+    func domainToPresentation(_ value: [DomainSwiftDataVideo]) -> [UiSwiftDataVideo]
+    func presentationToDomain(_ value: UiSwiftDataVideo) -> DomainSwiftDataVideo
+}
 
-    init(coordinator: FunctionalitiesCoordinator) {
-        self.coordinator = coordinator
-    }
-    
-    let container = try! ModelContainer(for: UiSwiftDataVideo.self, UiSwiftDataMeta.self)
-    
-    @MainActor
-    var modelContext: ModelContext {
-        container.mainContext
+final class SwiftDataPresentationMapperImpl: SwiftDataPresentationMapper {
+    func domainToPresentation(_ value: [DomainSwiftDataVideo]) -> [UiSwiftDataVideo] {
+        value.compactMap(domainToPresentation(_:))
     }
 
-    @Published var videos: [UiSwiftDataVideo] = []
-    
-    
-    @MainActor
-    func getVideos() {
-        let fetchDescriptor = FetchDescriptor<UiSwiftDataVideo>(
-            predicate: nil,
-            sortBy: [SortDescriptor<UiSwiftDataVideo>(\.title)]
+    private func domainToPresentation(_ value: DomainSwiftDataVideo) -> UiSwiftDataVideo {
+        return UiSwiftDataVideo(
+            id: value.id,
+            title: value.title,
+            isFavorite: value.isFavorite,
+            numberOfLikes: .zero
         )
-        videos = try! modelContext.fetch(fetchDescriptor)
     }
 
-    @MainActor
-    func insert(video: UiSwiftDataVideo) {
-        modelContext.insert(video)
-//        videos = []
-        getVideos()
+    func presentationToDomain(_ value: UiSwiftDataVideo) -> DomainSwiftDataVideo {
+        return DomainSwiftDataVideo(
+            id: value.id,
+            title: value.title,
+            isFavorite: value.isFavorite
+        )
     }
+}
 
+
+final class SwiftDataViewModel: ObservableObject {
+    @Published var coordinator: FunctionalitiesCoordinator
+    private var getAllVideosUseCase: GetAllVideosUseCase
+    private var deleteAllVideosUseCase: DeleteAllVideosUseCase
+    private var addVideoUseCase: AddVideoUseCase
+    private var mapper: SwiftDataPresentationMapper
+    @Published var videos: [UiSwiftDataVideo] = []
+    init(
+        coordinator: FunctionalitiesCoordinator,
+        getAllVideosUseCase: GetAllVideosUseCase,
+        deleteAllVideosUseCase: DeleteAllVideosUseCase,
+        addVideoUseCase: AddVideoUseCase,
+        mapper: SwiftDataPresentationMapper
+    ) {
+        self.coordinator = coordinator
+        self.getAllVideosUseCase = getAllVideosUseCase
+        self.deleteAllVideosUseCase = deleteAllVideosUseCase
+        self.addVideoUseCase = addVideoUseCase
+        self.mapper = mapper
+    }
+}
+
+extension SwiftDataViewModel {
     @MainActor
-    func deleteAllVideos() {
-        videos.forEach {
-            modelContext.delete($0)
+    func fetchVideos() async {
+        do {
+            let result = try await getAllVideosUseCase.execute()
+            videos = mapper.domainToPresentation(result)
+        } catch {
+            print("Error loading videos: \(error)")
         }
-//        videos = []
-        getVideos()
+    }
+
+    @MainActor
+    func addNewVideo() async {
+        let newVideo = UiSwiftDataVideo(id: UUID(), title: "New Video", isFavorite: false, numberOfLikes: .zero)
+        let domainVideo = mapper.presentationToDomain(newVideo)
+        try? await addVideoUseCase.execute(video: domainVideo)
+        await fetchVideos()
+    }
+
+    @MainActor
+    func removeAllVideos() async {
+        try? await deleteAllVideosUseCase.execute()
+        await fetchVideos()
     }
 }

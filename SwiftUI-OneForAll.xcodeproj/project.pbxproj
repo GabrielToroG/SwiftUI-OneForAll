@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7F093F7F2DFB6B9500128642 /* IconTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F093F7E2DFB6B9500128642 /* IconTextButton.swift */; };
+		7F1337162E34A02C0036378E /* ToggleFavoriteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1337152E34A01E0036378E /* ToggleFavoriteUseCase.swift */; };
+		7F13371A2E36D5560036378E /* CustomHeaderModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1337192E36D5500036378E /* CustomHeaderModule.swift */; };
+		7F13371D2E36D6070036378E /* DataBackwardModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13371C2E36D6000036378E /* DataBackwardModule.swift */; };
+		7F1337202E36D6930036378E /* SwiftDataModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13371F2E36D68E0036378E /* SwiftDataModule.swift */; };
 		7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */; };
 		7F1A80EC2D3FF10B00C8CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */; };
 		7F1A80EF2D3FF10B00C8CB43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A80EE2D3FF10B00C8CB43 /* Preview Assets.xcassets */; };
@@ -37,12 +41,25 @@
 		7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */; };
 		7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81442D40B47100C8CB43 /* ColorExtension.swift */; };
 		7F1A814A2D42183600C8CB43 /* UIComponentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81492D42183600C8CB43 /* UIComponentOption.swift */; };
+		7F65872A2E276D5B00FAC7FB /* SwiftDataDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6587292E276D5500FAC7FB /* SwiftDataDomainMapper.swift */; };
+		7F65872C2E276D6800FAC7FB /* SwiftDataDomainMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65872B2E276D6500FAC7FB /* SwiftDataDomainMapperImpl.swift */; };
+		7F65872E2E276F2600FAC7FB /* GetAllVideosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65872D2E276F1C00FAC7FB /* GetAllVideosUseCase.swift */; };
 		7F6D77442E037EC7003FC36C /* SwiftDataFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77432E037EC1003FC36C /* SwiftDataFavoriteView.swift */; };
 		7F6D77462E037EF1003FC36C /* SwiftDataFavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77452E037EEB003FC36C /* SwiftDataFavoriteViewModel.swift */; };
+		7F6D774B2E03CCE0003FC36C /* SwiftDataLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D774A2E03CCCF003FC36C /* SwiftDataLocalDataSource.swift */; };
+		7F6D774D2E03CD25003FC36C /* SwiftDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D774C2E03CD21003FC36C /* SwiftDataRepository.swift */; };
+		7F6D774F2E03CD4D003FC36C /* SwiftDataRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D774E2E03CD47003FC36C /* SwiftDataRepositoryImpl.swift */; };
+		7F6D77512E03CE2F003FC36C /* SwiftDataLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77502E03CE2E003FC36C /* SwiftDataLocalDataSourceImpl.swift */; };
+		7F6D77542E03CE87003FC36C /* ApiSwiftDataVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77532E03CE80003FC36C /* ApiSwiftDataVideo.swift */; };
+		7F6D77562E03CED3003FC36C /* ApiSwiftDataMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77552E03CECD003FC36C /* ApiSwiftDataMeta.swift */; };
+		7F6D775A2E03CF0A003FC36C /* AddVideoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77592E03CF08003FC36C /* AddVideoUseCase.swift */; };
+		7F6D775C2E03CF26003FC36C /* DeleteAllVideosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D775B2E03CF25003FC36C /* DeleteAllVideosUseCase.swift */; };
+		7F6D77662E03D15C003FC36C /* SwiftDataDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77652E03D158003FC36C /* SwiftDataDataMapper.swift */; };
+		7F6D77682E03D163003FC36C /* SwiftDataDataMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77672E03D15F003FC36C /* SwiftDataDataMapperImpl.swift */; };
+		7F6D776A2E03D411003FC36C /* DomainSwiftDataVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D77692E03D410003FC36C /* DomainSwiftDataVideo.swift */; };
 		7F72FDB52E02611600D0633D /* SwiftDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72FDB42E02611600D0633D /* SwiftDataView.swift */; };
 		7F72FDB72E02623300D0633D /* SwiftDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72FDB62E02623200D0633D /* SwiftDataViewModel.swift */; };
 		7F72FDCB2E028BDC00D0633D /* UiSwiftDataVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72FDCA2E028BD000D0633D /* UiSwiftDataVideo.swift */; };
-		7F72FDCD2E028DAC00D0633D /* UiSwiftDataMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72FDCC2E028DA300D0633D /* UiSwiftDataMeta.swift */; };
 		7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8E82D430763009E8201 /* UIColorExtension.swift */; };
 		7FA6B8F12D430D07009E8201 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F02D430D07009E8201 /* Font.swift */; };
 		7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B8F22D44392D009E8201 /* Dimensions.swift */; };
@@ -75,6 +92,10 @@
 
 /* Begin PBXFileReference section */
 		7F093F7E2DFB6B9500128642 /* IconTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextButton.swift; sourceTree = "<group>"; };
+		7F1337152E34A01E0036378E /* ToggleFavoriteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFavoriteUseCase.swift; sourceTree = "<group>"; };
+		7F1337192E36D5500036378E /* CustomHeaderModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderModule.swift; sourceTree = "<group>"; };
+		7F13371C2E36D6000036378E /* DataBackwardModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBackwardModule.swift; sourceTree = "<group>"; };
+		7F13371F2E36D68E0036378E /* SwiftDataModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataModule.swift; sourceTree = "<group>"; };
 		7F1A80E42D3FF10A00C8CB43 /* SwiftUI-OneForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-OneForAll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1A80E72D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_OneForAllApp.swift; sourceTree = "<group>"; };
 		7F1A80EB2D3FF10B00C8CB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,12 +126,25 @@
 		7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesView.swift; sourceTree = "<group>"; };
 		7F1A81442D40B47100C8CB43 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		7F1A81492D42183600C8CB43 /* UIComponentOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentOption.swift; sourceTree = "<group>"; };
+		7F6587292E276D5500FAC7FB /* SwiftDataDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataDomainMapper.swift; sourceTree = "<group>"; };
+		7F65872B2E276D6500FAC7FB /* SwiftDataDomainMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataDomainMapperImpl.swift; sourceTree = "<group>"; };
+		7F65872D2E276F1C00FAC7FB /* GetAllVideosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllVideosUseCase.swift; sourceTree = "<group>"; };
 		7F6D77432E037EC1003FC36C /* SwiftDataFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataFavoriteView.swift; sourceTree = "<group>"; };
 		7F6D77452E037EEB003FC36C /* SwiftDataFavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataFavoriteViewModel.swift; sourceTree = "<group>"; };
+		7F6D774A2E03CCCF003FC36C /* SwiftDataLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataLocalDataSource.swift; sourceTree = "<group>"; };
+		7F6D774C2E03CD21003FC36C /* SwiftDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataRepository.swift; sourceTree = "<group>"; };
+		7F6D774E2E03CD47003FC36C /* SwiftDataRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataRepositoryImpl.swift; sourceTree = "<group>"; };
+		7F6D77502E03CE2E003FC36C /* SwiftDataLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataLocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		7F6D77532E03CE80003FC36C /* ApiSwiftDataVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSwiftDataVideo.swift; sourceTree = "<group>"; };
+		7F6D77552E03CECD003FC36C /* ApiSwiftDataMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSwiftDataMeta.swift; sourceTree = "<group>"; };
+		7F6D77592E03CF08003FC36C /* AddVideoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoUseCase.swift; sourceTree = "<group>"; };
+		7F6D775B2E03CF25003FC36C /* DeleteAllVideosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAllVideosUseCase.swift; sourceTree = "<group>"; };
+		7F6D77652E03D158003FC36C /* SwiftDataDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataDataMapper.swift; sourceTree = "<group>"; };
+		7F6D77672E03D15F003FC36C /* SwiftDataDataMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataDataMapperImpl.swift; sourceTree = "<group>"; };
+		7F6D77692E03D410003FC36C /* DomainSwiftDataVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainSwiftDataVideo.swift; sourceTree = "<group>"; };
 		7F72FDB42E02611600D0633D /* SwiftDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataView.swift; sourceTree = "<group>"; };
 		7F72FDB62E02623200D0633D /* SwiftDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataViewModel.swift; sourceTree = "<group>"; };
 		7F72FDCA2E028BD000D0633D /* UiSwiftDataVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiSwiftDataVideo.swift; sourceTree = "<group>"; };
-		7F72FDCC2E028DA300D0633D /* UiSwiftDataMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiSwiftDataMeta.swift; sourceTree = "<group>"; };
 		7FA6B8E82D430763009E8201 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		7FA6B8EE2D430CD9009E8201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA6B8F02D430D07009E8201 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -167,6 +201,30 @@
 				7F093F7E2DFB6B9500128642 /* IconTextButton.swift */,
 			);
 			path = IconTextButton;
+			sourceTree = "<group>";
+		};
+		7F1337182E36D5490036378E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				7F1337192E36D5500036378E /* CustomHeaderModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		7F13371B2E36D5FC0036378E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				7F13371C2E36D6000036378E /* DataBackwardModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		7F13371E2E36D6880036378E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				7F13371F2E36D68E0036378E /* SwiftDataModule.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		7F1A80DB2D3FF10A00C8CB43 = {
@@ -470,9 +528,97 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		7F6587282E276D4F00FAC7FB /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				7F6587292E276D5500FAC7FB /* SwiftDataDomainMapper.swift */,
+				7F65872B2E276D6500FAC7FB /* SwiftDataDomainMapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		7F6D77472E03CC4D003FC36C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D77522E03CE75003FC36C /* Entity */,
+				7F6D77642E03D14D003FC36C /* Mapper */,
+				7F6D77492E03CC76003FC36C /* DataSource */,
+				7F6D77482E03CC72003FC36C /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7F6D77482E03CC72003FC36C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D774C2E03CD21003FC36C /* SwiftDataRepository.swift */,
+				7F6D774E2E03CD47003FC36C /* SwiftDataRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7F6D77492E03CC76003FC36C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D774A2E03CCCF003FC36C /* SwiftDataLocalDataSource.swift */,
+				7F6D77502E03CE2E003FC36C /* SwiftDataLocalDataSourceImpl.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7F6D77522E03CE75003FC36C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D77532E03CE80003FC36C /* ApiSwiftDataVideo.swift */,
+				7F6D77552E03CECD003FC36C /* ApiSwiftDataMeta.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7F6D77572E03CEE4003FC36C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7F6587282E276D4F00FAC7FB /* Mapper */,
+				7F6D775D2E03CF46003FC36C /* Entity */,
+				7F6D77582E03CEF0003FC36C /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7F6D77582E03CEF0003FC36C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				7F1337152E34A01E0036378E /* ToggleFavoriteUseCase.swift */,
+				7F65872D2E276F1C00FAC7FB /* GetAllVideosUseCase.swift */,
+				7F6D77592E03CF08003FC36C /* AddVideoUseCase.swift */,
+				7F6D775B2E03CF25003FC36C /* DeleteAllVideosUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		7F6D775D2E03CF46003FC36C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D77692E03D410003FC36C /* DomainSwiftDataVideo.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7F6D77642E03D14D003FC36C /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D77652E03D158003FC36C /* SwiftDataDataMapper.swift */,
+				7F6D77672E03D15F003FC36C /* SwiftDataDataMapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 		7F72FDAE2E0260D500D0633D /* SwiftData */ = {
 			isa = PBXGroup;
 			children = (
+				7F13371E2E36D6880036378E /* DI */,
+				7F6D77472E03CC4D003FC36C /* Data */,
+				7F6D77572E03CEE4003FC36C /* Domain */,
 				7F72FDC42E028B1300D0633D /* Presentation */,
 			);
 			path = SwiftData;
@@ -609,7 +755,6 @@
 			isa = PBXGroup;
 			children = (
 				7F72FDCA2E028BD000D0633D /* UiSwiftDataVideo.swift */,
-				7F72FDCC2E028DA300D0633D /* UiSwiftDataMeta.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -723,6 +868,7 @@
 		7FA6B9142D45EE0E009E8201 /* DataBackward */ = {
 			isa = PBXGroup;
 			children = (
+				7F13371B2E36D5FC0036378E /* DI */,
 				7F72FDC32E028B0A00D0633D /* Presentation */,
 			);
 			path = DataBackward;
@@ -755,6 +901,7 @@
 		7FCC9E522DE1872B00F25C68 /* CustomHeader */ = {
 			isa = PBXGroup;
 			children = (
+				7F1337182E36D5490036378E /* DI */,
 				7F72FDC22E028B0100D0633D /* Presentation */,
 			);
 			path = CustomHeader;
@@ -915,12 +1062,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6D77512E03CE2F003FC36C /* SwiftDataLocalDataSourceImpl.swift in Sources */,
 				7FA6B90C2D4575AC009E8201 /* MyConcatText.swift in Sources */,
 				7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */,
 				7F1A81322D40748500C8CB43 /* UIComponentsView.swift in Sources */,
 				7FE79E0B2D90791A00E30088 /* IconButton.swift in Sources */,
 				7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */,
+				7F6D775A2E03CF0A003FC36C /* AddVideoUseCase.swift in Sources */,
 				7F1A810E2D403B5400C8CB43 /* ViewExtension.swift in Sources */,
+				7F13371A2E36D5560036378E /* CustomHeaderModule.swift in Sources */,
+				7F6D77542E03CE87003FC36C /* ApiSwiftDataVideo.swift in Sources */,
 				7F1A812D2D4073C700C8CB43 /* UIComponentsRoute.swift in Sources */,
 				7F1A813C2D40755100C8CB43 /* FunctionalitiesCoordinator.swift in Sources */,
 				7FA6B91B2D45F19C009E8201 /* UIFunctionalitiesOption.swift in Sources */,
@@ -930,25 +1081,34 @@
 				7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */,
 				7F1A81402D40761900C8CB43 /* FunctionalitiesViewModel.swift in Sources */,
 				7F1A80E82D3FF10A00C8CB43 /* SwiftUI_OneForAllApp.swift in Sources */,
+				7F1337162E34A02C0036378E /* ToggleFavoriteUseCase.swift in Sources */,
 				7FA6B8FC2D444144009E8201 /* LabelViewModel.swift in Sources */,
 				7F72FDB72E02623300D0633D /* SwiftDataViewModel.swift in Sources */,
 				7FCC9E512DDFDDEB00F25C68 /* SafeAreaCustomVStack.swift in Sources */,
 				7FA6B9052D44B4DE009E8201 /* FontsExtension.swift in Sources */,
+				7F6D774F2E03CD4D003FC36C /* SwiftDataRepositoryImpl.swift in Sources */,
 				7F72FDB52E02611600D0633D /* SwiftDataView.swift in Sources */,
 				7F1A811F2D406EA100C8CB43 /* MainTabModule.swift in Sources */,
 				7F1A81162D403C8700C8CB43 /* MainControllerProvider.swift in Sources */,
+				7F13371D2E36D6070036378E /* DataBackwardModule.swift in Sources */,
+				7F6D77662E03D15C003FC36C /* SwiftDataDataMapper.swift in Sources */,
+				7F6D776A2E03D411003FC36C /* DomainSwiftDataVideo.swift in Sources */,
+				7F6D775C2E03CF26003FC36C /* DeleteAllVideosUseCase.swift in Sources */,
 				7FCC9E562DE1876B00F25C68 /* CustomHeaderView.swift in Sources */,
 				7FA6B91F2D45F836009E8201 /* FavoriteViewModel.swift in Sources */,
 				7FCC9E582DE1887400F25C68 /* CustomHeaderViewModel.swift in Sources */,
 				7FA6B9162D45EE22009E8201 /* DataBackwardView.swift in Sources */,
+				7F65872E2E276F2600FAC7FB /* GetAllVideosUseCase.swift in Sources */,
 				7FE79DFC2D90746E00E30088 /* ButtonView.swift in Sources */,
 				7FE79E082D9077CE00E30088 /* MyConcatText+Content.swift in Sources */,
 				7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */,
 				7FE79DFE2D9074AC00E30088 /* ButtonViewModel.swift in Sources */,
 				7FA6B9072D455DE2009E8201 /* TextExtension.swift in Sources */,
+				7F6D774D2E03CD25003FC36C /* SwiftDataRepository.swift in Sources */,
 				7FE79E152D9083EF00E30088 /* MyButton.swift in Sources */,
 				7F1A811D2D406E8A00C8CB43 /* MainTabCoordinator.swift in Sources */,
 				7F1A81352D40749A00C8CB43 /* UIComponentsViewModel.swift in Sources */,
+				7F1337202E36D6930036378E /* SwiftDataModule.swift in Sources */,
 				7F093F7F2DFB6B9500128642 /* IconTextButton.swift in Sources */,
 				7F1A81122D403C7700C8CB43 /* Container.swift in Sources */,
 				7FA6B9112D45B4BF009E8201 /* ImageViewModel.swift in Sources */,
@@ -961,6 +1121,7 @@
 				7FE79E122D907CC600E30088 /* Assets.swift in Sources */,
 				7FCC9E4C2DDFD0A600F25C68 /* CustomVStack.swift in Sources */,
 				7FA6B8FA2D44413D009E8201 /* LabelView.swift in Sources */,
+				7F6D774B2E03CCE0003FC36C /* SwiftDataLocalDataSource.swift in Sources */,
 				7F1A810B2D403B2F00C8CB43 /* NavigationSetupModifier.swift in Sources */,
 				7F1A814A2D42183600C8CB43 /* UIComponentOption.swift in Sources */,
 				7F1A81062D40361C00C8CB43 /* Coordinator.swift in Sources */,
@@ -968,10 +1129,13 @@
 				7F1A812F2D4073E500C8CB43 /* UIComponentsCoordinator.swift in Sources */,
 				7FA6B9182D45EE2A009E8201 /* DataBackwardViewModel.swift in Sources */,
 				7FA6B9032D4454F1009E8201 /* ToolbarLeadingModifier.swift in Sources */,
-				7F72FDCD2E028DAC00D0633D /* UiSwiftDataMeta.swift in Sources */,
+				7F65872A2E276D5B00FAC7FB /* SwiftDataDomainMapper.swift in Sources */,
+				7F6D77562E03CED3003FC36C /* ApiSwiftDataMeta.swift in Sources */,
 				7FA6B90A2D455EFE009E8201 /* MyText.swift in Sources */,
+				7F6D77682E03D163003FC36C /* SwiftDataDataMapperImpl.swift in Sources */,
 				7F6D77442E037EC7003FC36C /* SwiftDataFavoriteView.swift in Sources */,
 				7FA6B9012D4453C1009E8201 /* ToolbarTrailingModifier.swift in Sources */,
+				7F65872C2E276D6800FAC7FB /* SwiftDataDomainMapperImpl.swift in Sources */,
 				7F1A81372D40752700C8CB43 /* FunctionalitiesModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
