@@ -17,7 +17,8 @@ class MainTabCoordinator: ObservableObject {
     }
 
     func startView() -> some View {
-        let mainTabView = Injection.shared.controllerProvider.getMainTab()
+        let controllerProvider = container.obtener(MainControllerProvider.self)!
+        let mainTabView = controllerProvider.getMainTab()
         return AnyView(mainTabView.environmentObject(self))
     }
 }

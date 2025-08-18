@@ -17,13 +17,20 @@ final class Injection: ObservableObject {
     private init() {
         container = Container()
         controllerProvider = .init(container)
-        injectDependencies()
+        injectAppModules()
+        registerCoreServices()
     }
     
-    private func injectDependencies() {
+    private func injectAppModules() {
         MainTabModule(container).inject()
         UIComponentsModule(container).inject()
         FunctionalitiesModule(container).inject()
+    }
+
+    private func registerCoreServices() {
+        container.registrar(MainControllerProvider.self) { container in
+            MainControllerProvider(container)
+        }
     }
     
     func getContainer() -> Container {
