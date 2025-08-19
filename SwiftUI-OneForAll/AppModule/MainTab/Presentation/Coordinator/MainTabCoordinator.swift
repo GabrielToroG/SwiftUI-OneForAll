@@ -17,12 +17,11 @@ class MainTabCoordinator: ObservableObject {
     }
 
     func startView() -> some View {
-        let controllerProvider = container.obtener(MainControllerProvider.self)!
+        let controllerProvider = container.obtener(MainControllerProvider.self)
         let mainTabView = controllerProvider.getMainTab()
         return AnyView(mainTabView.environmentObject(self))
     }
 }
-
 
 enum MainTabRoute: Route {
     case none

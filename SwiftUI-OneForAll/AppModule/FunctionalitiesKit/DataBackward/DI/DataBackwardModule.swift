@@ -17,7 +17,7 @@ final class DataBackwardModule {
         }
 
         container.registrarUna(DataBackwardView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            let viewModel = resolver.obtenerUna(DataBackwardViewModel.self, argument: coordinator)!
+            let viewModel = resolver.obtenerUna(DataBackwardViewModel.self, argument: coordinator)
             return DataBackwardView(viewModel: viewModel)
         }
 
@@ -26,7 +26,7 @@ final class DataBackwardModule {
         }
 
         container.registrarDos(FavoriteView.self) { (resolver, coordinator: FunctionalitiesCoordinator, isFavorite: BindableBool) in
-            let viewModel = resolver.obtenerDos(FavoriteViewModel.self, argument1: coordinator, argument2: isFavorite)!
+            let viewModel = resolver.obtenerDos(FavoriteViewModel.self, argument1: coordinator, argument2: isFavorite)
             return FavoriteView(viewModel: viewModel)
         }
     }

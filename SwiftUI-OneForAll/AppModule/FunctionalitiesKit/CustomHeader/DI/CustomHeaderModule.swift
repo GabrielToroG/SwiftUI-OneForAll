@@ -17,7 +17,7 @@ final class CustomHeaderModule {
         }
 
         container.registrarUna(CustomHeaderView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            let viewModel = resolver.obtenerUna(CustomHeaderViewModel.self, argument: coordinator)!
+            let viewModel = resolver.obtenerUna(CustomHeaderViewModel.self, argument: coordinator)
             return CustomHeaderView(viewModel: viewModel)
         }
     }

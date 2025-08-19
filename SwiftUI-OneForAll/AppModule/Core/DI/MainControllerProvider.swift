@@ -21,18 +21,18 @@ final class MainControllerProvider {
     }
 
     func getMainTab() -> some View {
-        let mainTabView = container.obtener(MainTabView.self)!
+        let mainTabView = container.obtenerUna(MainTabView.self, argument: self)
         return mainTabView
     }
 
     func getUIComponentsTab() -> some View {
-        let coordinator = container.obtener(UIComponentsCoordinator.self)!
+        let coordinator = container.obtener(UIComponentsCoordinator.self)
         let view = container.obtenerUna(UIComponentsView.self, argument: coordinator)
         return view
     }
 
     func getFunctionalitiesTab() -> some View {
-        let coordinator = container.obtener(FunctionalitiesCoordinator.self)!
+        let coordinator = container.obtener(FunctionalitiesCoordinator.self)
         let view = container.obtenerUna(FunctionalitiesView.self, argument: coordinator)
         return view
     }

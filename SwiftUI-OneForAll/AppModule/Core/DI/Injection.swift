@@ -11,12 +11,9 @@ import SwiftData
 final class Injection: ObservableObject {
     static let shared = Injection()
     private let container: Container
-    let controllerProvider: MainControllerProvider
-
 
     private init() {
         container = Container()
-        controllerProvider = .init(container)
         injectAppModules()
         registerCoreServices()
     }
@@ -41,12 +38,5 @@ final class Injection: ObservableObject {
         container.registrar(ModelContext.self) { _ in
             modelContext
         }
-    }
-    
-    func resolve<T>(_ serviceType: T.Type) -> T {
-        guard let service = container.obtener(serviceType) else {
-            fatalError("No se pudo resolver el tipo de servicio \(serviceType)")
-        }
-        return service
     }
 }

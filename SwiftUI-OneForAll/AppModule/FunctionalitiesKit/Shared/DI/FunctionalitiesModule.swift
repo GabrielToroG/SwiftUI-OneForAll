@@ -30,7 +30,7 @@ private extension FunctionalitiesModule {
         }
         
         container.registrarUna(FunctionalitiesView.self) { (resolver, coordinator: FunctionalitiesCoordinator) in
-            let viewModel = resolver.obtenerUna(FunctionalitiesViewModel.self, argument: coordinator)!
+            let viewModel = resolver.obtenerUna(FunctionalitiesViewModel.self, argument: coordinator)
             return FunctionalitiesView(viewModel: viewModel)
         }
     }

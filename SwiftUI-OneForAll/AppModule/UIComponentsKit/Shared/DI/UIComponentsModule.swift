@@ -29,7 +29,7 @@ private extension UIComponentsModule {
         }
         
         container.registrarUna(UIComponentsView.self) { (resolver, coordinator: UIComponentsCoordinator) in
-            let viewModel = resolver.obtenerUna(UIComponentsViewModel.self, argument: coordinator)!
+            let viewModel = resolver.obtenerUna(UIComponentsViewModel.self, argument: coordinator)
             return UIComponentsView(viewModel: viewModel)
         }
 
@@ -39,7 +39,7 @@ private extension UIComponentsModule {
         }
 
         container.registrarUna(LabelView.self) { (resolver, coordinator: UIComponentsCoordinator) in
-            let viewModel = resolver.obtenerUna(LabelViewModel.self, argument: coordinator)!
+            let viewModel = resolver.obtenerUna(LabelViewModel.self, argument: coordinator)
             return LabelView(viewModel: viewModel)
         }
 
@@ -49,7 +49,7 @@ private extension UIComponentsModule {
         }
 
         container.registrarUna(ImageView.self) { (resolver, coordinator: UIComponentsCoordinator) in
-            let viewModel = resolver.obtenerUna(ImageViewModel.self, argument: coordinator)!
+            let viewModel = resolver.obtenerUna(ImageViewModel.self, argument: coordinator)
             return ImageView(viewModel: viewModel)
         }
 
@@ -59,7 +59,7 @@ private extension UIComponentsModule {
         }
 
         container.registrarUna(ButtonView.self) { (resolver, coordinator: UIComponentsCoordinator) in
-            let viewModel = resolver.obtenerUna(ButtonViewModel.self, argument: coordinator)!
+            let viewModel = resolver.obtenerUna(ButtonViewModel.self, argument: coordinator)
             return ButtonView(viewModel: viewModel)
         }
     }

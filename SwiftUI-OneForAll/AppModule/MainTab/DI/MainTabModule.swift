@@ -20,8 +20,8 @@ final class MainTabModule {
 
 private extension MainTabModule {
     func injectPresentation() {
-        container.registrar(MainTabView.self) { resolver in
-            return MainTabView()
+        container.registrarUna(MainTabView.self) { container, provider in
+            MainTabView(controllerProvider: provider)
         }
     }
 }

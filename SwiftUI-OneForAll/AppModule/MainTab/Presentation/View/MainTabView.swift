@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct MainTabView: View {
+    let controllerProvider: MainControllerProvider
+
     var body: some View {
         TabView {
-            Injection.shared.controllerProvider.getUIComponentsTab()
+            controllerProvider.getUIComponentsTab()
                 .tabItem {
                     Label("UIComponents", image: "components-icon")
                 }
-            
-            Injection.shared.controllerProvider.getFunctionalitiesTab()
+
+            controllerProvider.getFunctionalitiesTab()
                 .tabItem {
                     Label("Funcionalidades", image: "functionalities-icon")
                 }
