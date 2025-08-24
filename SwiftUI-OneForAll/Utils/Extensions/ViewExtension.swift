@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - General
 extension View {
     func applyNavigation<CoordinatorType: Coordinator>(coordinator: CoordinatorType) -> some View {
         self.modifier(NavigationSetupModifier(coordinator: coordinator))
@@ -37,5 +38,25 @@ extension View {
     /// Función para agregar el header derecho
     func toolbarTrailing<Items: View>(@ViewBuilder items: @escaping () -> Items) -> some View {
         modifier(ToolbarTrailingModifier(items: items))
+    }
+}
+
+// MARK: - Custom Views
+extension View {
+    /// Función para llamar al toast, ya sea por la parte superior o infeior. También se le puede fijar el comportamiento para desaparecer
+    func toast(
+        isPresented: Binding<Bool>,
+        style: ToastStyle,
+        message: String,
+        position: ToastPosition = .bottom,
+        behavior: ToastBehavior = .autoAndTap
+    ) -> some View {
+        self.modifier(ToastModifier(
+            isPresented: isPresented,
+            style: style,
+            message: message,
+            position: position,
+            behavior: behavior
+        ))
     }
 }

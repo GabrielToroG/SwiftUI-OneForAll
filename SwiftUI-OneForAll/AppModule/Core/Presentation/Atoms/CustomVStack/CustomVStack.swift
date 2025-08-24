@@ -30,11 +30,4 @@ struct CustomVStack<Content: View>: View {
         self.padding = padding
         self.content = content
     }
-
-    var body: some View {
-        VStack(alignment: alignment, spacing: spacing) {
-            content()
-        }
-        .padding(padding)
-    }
 }

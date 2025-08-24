@@ -30,15 +30,6 @@ struct MyText: View {
         self.backgroundColor = backgroundColor
         self.useStrikethrough = useStrikethrough
     }
-
-    var body: some View {
-        Text(text)
-            .font(font)
-            .lineLimit(lines)
-            .foregroundColor(textColor)
-            .background(backgroundColor)
-            .strikethrough(useStrikethrough)
-    }
 }
 
 

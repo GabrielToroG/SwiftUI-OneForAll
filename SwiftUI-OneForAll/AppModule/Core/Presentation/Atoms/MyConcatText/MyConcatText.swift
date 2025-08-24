@@ -13,13 +13,4 @@ struct MyConcatText: View {
     init(style: [MyConcatTextStyle]) {
         self.style = style
     }
-
-    var body: some View {
-        style.map { styledText in
-            Text(styledText.text)
-                .font(styledText.font)
-                .foregroundColor(styledText.textColor)
-        }
-        .concat()
-    }
 }

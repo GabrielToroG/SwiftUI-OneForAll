@@ -30,6 +30,10 @@ final class UIComponentsCoordinator: ObservableObject {
     func navigateToButton() {
         path.append(UIComponentsRoute.button)
     }
+
+    func navigateToToast() {
+        path.append(UIComponentsRoute.toast)
+    }
 }
 
 extension UIComponentsCoordinator: Coordinator {
@@ -42,6 +46,8 @@ extension UIComponentsCoordinator: Coordinator {
             container.obtenerUna(ImageView.self, argument: self)
         case .button:
             container.obtenerUna(ButtonView.self, argument: self)
+        case .toast:
+            container.obtenerUna(ToastMenuView.self, argument: self)
         }
     }
 }

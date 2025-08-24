@@ -62,6 +62,8 @@ extension UIComponentsView {
             viewModel.coordinator.navigateToImage()
         case 2:
             viewModel.coordinator.navigateToButton()
+        case 4:
+            viewModel.coordinator.navigateToToast()
         default:
             print("No está implementado todavia")
         }

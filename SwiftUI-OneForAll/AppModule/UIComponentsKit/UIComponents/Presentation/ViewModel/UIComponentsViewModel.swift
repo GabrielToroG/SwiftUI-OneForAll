@@ -13,6 +13,7 @@ final class UIComponentsViewModel: ObservableObject {
         UIComponentOption(icon: "home.image.option", title: "Image"),
         UIComponentOption(icon: "home.button.option", title: "Buttons"),
         UIComponentOption(icon: "home.textfield.option", title: "Text Fields"),
+        UIComponentOption(icon: "home.toast.option", title: "Toasts"),
     ]
 
     @Published var coordinator: UIComponentsCoordinator

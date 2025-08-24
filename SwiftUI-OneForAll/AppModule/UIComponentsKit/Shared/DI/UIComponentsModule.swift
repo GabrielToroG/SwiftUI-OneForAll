@@ -62,5 +62,15 @@ private extension UIComponentsModule {
             let viewModel = resolver.obtenerUna(ButtonViewModel.self, argument: coordinator)
             return ButtonView(viewModel: viewModel)
         }
+
+        // MARK: - Toast
+        container.registrarUna(ToastMenuViewModel.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            ToastMenuViewModel(coordinator: coordinator)
+        }
+
+        container.registrarUna(ToastMenuView.self) { (resolver, coordinator: UIComponentsCoordinator) in
+            let viewModel = resolver.obtenerUna(ToastMenuViewModel.self, argument: coordinator)
+            return ToastMenuView(viewModel: viewModel)
+        }
     }
 }

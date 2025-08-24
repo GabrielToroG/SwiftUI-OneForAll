@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct IconButton: View {
-    
     let icon: Image
     let width: CGFloat
     let height: CGFloat
@@ -24,16 +23,5 @@ struct IconButton: View {
         self.width = width
         self.height = height
         self.action = action
-    }
-
-    var body: some View {
-        Button {
-            action()
-        } label: {
-            icon
-                .resizable()
-                .foregroundColor(Color.blackColor)
-                .frame(width: width, height: height)
-        }
     }
 }

@@ -41,6 +41,22 @@
 		7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */; };
 		7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81442D40B47100C8CB43 /* ColorExtension.swift */; };
 		7F1A814A2D42183600C8CB43 /* UIComponentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A81492D42183600C8CB43 /* UIComponentOption.swift */; };
+		7F5A5BD92E5A9F0100CFCCC8 /* ToastMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BD82E5A9EFB00CFCCC8 /* ToastMenuView.swift */; };
+		7F5A5BDB2E5A9F9700CFCCC8 /* ToastMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BDA2E5A9F9600CFCCC8 /* ToastMenuViewModel.swift */; };
+		7F5A5BE12E5AD27800CFCCC8 /* ToastStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BE02E5AD26F00CFCCC8 /* ToastStyle.swift */; };
+		7F5A5BE32E5AD2B600CFCCC8 /* ToastPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BE22E5AD2B300CFCCC8 /* ToastPosition.swift */; };
+		7F5A5BE52E5AD2D300CFCCC8 /* ToastBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BE42E5AD2CF00CFCCC8 /* ToastBehavior.swift */; };
+		7F5A5BE72E5AD35000CFCCC8 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BE62E5AD34F00CFCCC8 /* ToastView.swift */; };
+		7F5A5BE92E5AD36700CFCCC8 /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BE82E5AD36600CFCCC8 /* ToastModifier.swift */; };
+		7F5A5BEE2E5ADA6300CFCCC8 /* GradientHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BED2E5ADA5C00CFCCC8 /* GradientHeader.swift */; };
+		7F5A5BF02E5ADB8300CFCCC8 /* CustomVStack+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BEF2E5ADB7E00CFCCC8 /* CustomVStack+Content.swift */; };
+		7F5A5BF22E5ADBA800CFCCC8 /* MyText+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BF12E5ADBA100CFCCC8 /* MyText+Content.swift */; };
+		7F5A5BF42E5ADC1B00CFCCC8 /* MyConcatText+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BF32E5ADC0F00CFCCC8 /* MyConcatText+Content.swift */; };
+		7F5A5BF62E5ADC5D00CFCCC8 /* MyButton+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BF52E5ADC5900CFCCC8 /* MyButton+Content.swift */; };
+		7F5A5BF92E5ADC7400CFCCC8 /* MyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BF82E5ADC7300CFCCC8 /* MyButtonStyle.swift */; };
+		7F5A5BFB2E5ADF5B00CFCCC8 /* IconButton+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BFA2E5ADF5700CFCCC8 /* IconButton+Content.swift */; };
+		7F5A5BFD2E5ADF9B00CFCCC8 /* IconTextButton+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BFC2E5ADF9600CFCCC8 /* IconTextButton+Content.swift */; };
+		7F5A5BFF2E5AE00500CFCCC8 /* GradientHeader+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A5BFE2E5AE00400CFCCC8 /* GradientHeader+Content.swift */; };
 		7F65872A2E276D5B00FAC7FB /* SwiftDataDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6587292E276D5500FAC7FB /* SwiftDataDomainMapper.swift */; };
 		7F65872C2E276D6800FAC7FB /* SwiftDataDomainMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65872B2E276D6500FAC7FB /* SwiftDataDomainMapperImpl.swift */; };
 		7F65872E2E276F2600FAC7FB /* GetAllVideosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F65872D2E276F1C00FAC7FB /* GetAllVideosUseCase.swift */; };
@@ -79,12 +95,11 @@
 		7FA6B91D2D45F830009E8201 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B91C2D45F830009E8201 /* FavoriteView.swift */; };
 		7FA6B91F2D45F836009E8201 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6B91E2D45F836009E8201 /* FavoriteViewModel.swift */; };
 		7FCC9E4C2DDFD0A600F25C68 /* CustomVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCC9E4B2DDFD0A600F25C68 /* CustomVStack.swift */; };
-		7FCC9E512DDFDDEB00F25C68 /* SafeAreaCustomVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCC9E502DDFDDEB00F25C68 /* SafeAreaCustomVStack.swift */; };
 		7FCC9E562DE1876B00F25C68 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCC9E552DE1876B00F25C68 /* CustomHeaderView.swift */; };
 		7FCC9E582DE1887400F25C68 /* CustomHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCC9E572DE1887300F25C68 /* CustomHeaderViewModel.swift */; };
 		7FE79DFC2D90746E00E30088 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79DFB2D90746E00E30088 /* ButtonView.swift */; };
 		7FE79DFE2D9074AC00E30088 /* ButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79DFD2D9074AC00E30088 /* ButtonViewModel.swift */; };
-		7FE79E082D9077CE00E30088 /* MyConcatText+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79E072D9077CE00E30088 /* MyConcatText+Content.swift */; };
+		7FE79E082D9077CE00E30088 /* MyConcatTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79E072D9077CE00E30088 /* MyConcatTextStyle.swift */; };
 		7FE79E0B2D90791A00E30088 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79E0A2D90791A00E30088 /* IconButton.swift */; };
 		7FE79E122D907CC600E30088 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79E112D907CC600E30088 /* Assets.swift */; };
 		7FE79E152D9083EF00E30088 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE79E142D9083EF00E30088 /* MyButton.swift */; };
@@ -126,6 +141,22 @@
 		7F1A81412D40762D00C8CB43 /* FunctionalitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalitiesView.swift; sourceTree = "<group>"; };
 		7F1A81442D40B47100C8CB43 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		7F1A81492D42183600C8CB43 /* UIComponentOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentOption.swift; sourceTree = "<group>"; };
+		7F5A5BD82E5A9EFB00CFCCC8 /* ToastMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMenuView.swift; sourceTree = "<group>"; };
+		7F5A5BDA2E5A9F9600CFCCC8 /* ToastMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMenuViewModel.swift; sourceTree = "<group>"; };
+		7F5A5BE02E5AD26F00CFCCC8 /* ToastStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastStyle.swift; sourceTree = "<group>"; };
+		7F5A5BE22E5AD2B300CFCCC8 /* ToastPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastPosition.swift; sourceTree = "<group>"; };
+		7F5A5BE42E5AD2CF00CFCCC8 /* ToastBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastBehavior.swift; sourceTree = "<group>"; };
+		7F5A5BE62E5AD34F00CFCCC8 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		7F5A5BE82E5AD36600CFCCC8 /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		7F5A5BED2E5ADA5C00CFCCC8 /* GradientHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHeader.swift; sourceTree = "<group>"; };
+		7F5A5BEF2E5ADB7E00CFCCC8 /* CustomVStack+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomVStack+Content.swift"; sourceTree = "<group>"; };
+		7F5A5BF12E5ADBA100CFCCC8 /* MyText+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyText+Content.swift"; sourceTree = "<group>"; };
+		7F5A5BF32E5ADC0F00CFCCC8 /* MyConcatText+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyConcatText+Content.swift"; sourceTree = "<group>"; };
+		7F5A5BF52E5ADC5900CFCCC8 /* MyButton+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyButton+Content.swift"; sourceTree = "<group>"; };
+		7F5A5BF82E5ADC7300CFCCC8 /* MyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButtonStyle.swift; sourceTree = "<group>"; };
+		7F5A5BFA2E5ADF5700CFCCC8 /* IconButton+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconButton+Content.swift"; sourceTree = "<group>"; };
+		7F5A5BFC2E5ADF9600CFCCC8 /* IconTextButton+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconTextButton+Content.swift"; sourceTree = "<group>"; };
+		7F5A5BFE2E5AE00400CFCCC8 /* GradientHeader+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GradientHeader+Content.swift"; sourceTree = "<group>"; };
 		7F6587292E276D5500FAC7FB /* SwiftDataDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataDomainMapper.swift; sourceTree = "<group>"; };
 		7F65872B2E276D6500FAC7FB /* SwiftDataDomainMapperImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataDomainMapperImpl.swift; sourceTree = "<group>"; };
 		7F65872D2E276F1C00FAC7FB /* GetAllVideosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllVideosUseCase.swift; sourceTree = "<group>"; };
@@ -165,12 +196,11 @@
 		7FA6B91C2D45F830009E8201 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		7FA6B91E2D45F836009E8201 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		7FCC9E4B2DDFD0A600F25C68 /* CustomVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVStack.swift; sourceTree = "<group>"; };
-		7FCC9E502DDFDDEB00F25C68 /* SafeAreaCustomVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaCustomVStack.swift; sourceTree = "<group>"; };
 		7FCC9E552DE1876B00F25C68 /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
 		7FCC9E572DE1887300F25C68 /* CustomHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderViewModel.swift; sourceTree = "<group>"; };
 		7FE79DFB2D90746E00E30088 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		7FE79DFD2D9074AC00E30088 /* ButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewModel.swift; sourceTree = "<group>"; };
-		7FE79E072D9077CE00E30088 /* MyConcatText+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyConcatText+Content.swift"; sourceTree = "<group>"; };
+		7FE79E072D9077CE00E30088 /* MyConcatTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcatTextStyle.swift; sourceTree = "<group>"; };
 		7FE79E0A2D90791A00E30088 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		7FE79E112D907CC600E30088 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		7FE79E142D9083EF00E30088 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
@@ -191,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				7F093F7D2DFB6B6D00128642 /* IconTextButton */,
+				7F5A5BDE2E5AD26300CFCCC8 /* Toast */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -199,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				7F093F7E2DFB6B9500128642 /* IconTextButton.swift */,
+				7F5A5BFC2E5ADF9600CFCCC8 /* IconTextButton+Content.swift */,
 			);
 			path = IconTextButton;
 			sourceTree = "<group>";
@@ -412,6 +444,7 @@
 				7FA6B8F52D4440FD009E8201 /* Label */,
 				7FA6B90D2D45B4A5009E8201 /* Image */,
 				7FE79DF82D90745200E30088 /* Button */,
+				7F5A5BD52E5A9ED600CFCCC8 /* Toast */,
 			);
 			path = UIComponentsKit;
 			sourceTree = "<group>";
@@ -492,6 +525,67 @@
 				7F1A81492D42183600C8CB43 /* UIComponentOption.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		7F5A5BD42E5A9ED600CFCCC8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A5BD62E5A9EEE00CFCCC8 /* ViewModel */,
+				7F5A5BD72E5A9EF400CFCCC8 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7F5A5BD52E5A9ED600CFCCC8 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A5BD42E5A9ED600CFCCC8 /* Presentation */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		7F5A5BD62E5A9EEE00CFCCC8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A5BDA2E5A9F9600CFCCC8 /* ToastMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F5A5BD72E5A9EF400CFCCC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A5BD82E5A9EFB00CFCCC8 /* ToastMenuView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F5A5BDE2E5AD26300CFCCC8 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A5BDF2E5AD26800CFCCC8 /* Utils */,
+				7F5A5BE82E5AD36600CFCCC8 /* ToastModifier.swift */,
+				7F5A5BE62E5AD34F00CFCCC8 /* ToastView.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		7F5A5BDF2E5AD26800CFCCC8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A5BE02E5AD26F00CFCCC8 /* ToastStyle.swift */,
+				7F5A5BE22E5AD2B300CFCCC8 /* ToastPosition.swift */,
+				7F5A5BE42E5AD2CF00CFCCC8 /* ToastBehavior.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F5A5BF72E5ADC6400CFCCC8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F5A5BF82E5ADC7300CFCCC8 /* MyButtonStyle.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7F64135A2D484AF90066458B /* View */ = {
@@ -886,7 +980,7 @@
 			isa = PBXGroup;
 			children = (
 				7FCC9E4B2DDFD0A600F25C68 /* CustomVStack.swift */,
-				7FCC9E502DDFDDEB00F25C68 /* SafeAreaCustomVStack.swift */,
+				7F5A5BEF2E5ADB7E00CFCCC8 /* CustomVStack+Content.swift */,
 			);
 			path = CustomVStack;
 			sourceTree = "<group>";
@@ -894,6 +988,8 @@
 		7FCC9E4D2DDFDC2700F25C68 /* GradientHeader */ = {
 			isa = PBXGroup;
 			children = (
+				7F5A5BED2E5ADA5C00CFCCC8 /* GradientHeader.swift */,
+				7F5A5BFE2E5AE00400CFCCC8 /* GradientHeader+Content.swift */,
 			);
 			path = GradientHeader;
 			sourceTree = "<group>";
@@ -951,6 +1047,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA6B9092D455EFE009E8201 /* MyText.swift */,
+				7F5A5BF12E5ADBA100CFCCC8 /* MyText+Content.swift */,
 			);
 			path = MyText;
 			sourceTree = "<group>";
@@ -958,24 +1055,26 @@
 		7FE79E032D90776C00E30088 /* MyConcatText */ = {
 			isa = PBXGroup;
 			children = (
-				7FE79E042D90777900E30088 /* Extension */,
+				7FE79E042D90777900E30088 /* Utils */,
 				7FA6B90B2D4575AC009E8201 /* MyConcatText.swift */,
+				7F5A5BF32E5ADC0F00CFCCC8 /* MyConcatText+Content.swift */,
 			);
 			path = MyConcatText;
 			sourceTree = "<group>";
 		};
-		7FE79E042D90777900E30088 /* Extension */ = {
+		7FE79E042D90777900E30088 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7FE79E072D9077CE00E30088 /* MyConcatText+Content.swift */,
+				7FE79E072D9077CE00E30088 /* MyConcatTextStyle.swift */,
 			);
-			path = Extension;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7FE79E092D90790900E30088 /* IconButton */ = {
 			isa = PBXGroup;
 			children = (
 				7FE79E0A2D90791A00E30088 /* IconButton.swift */,
+				7F5A5BFA2E5ADF5700CFCCC8 /* IconButton+Content.swift */,
 			);
 			path = IconButton;
 			sourceTree = "<group>";
@@ -983,7 +1082,9 @@
 		7FE79E132D9083DE00E30088 /* MyButton */ = {
 			isa = PBXGroup;
 			children = (
+				7F5A5BF72E5ADC6400CFCCC8 /* Utils */,
 				7FE79E142D9083EF00E30088 /* MyButton.swift */,
+				7F5A5BF52E5ADC5900CFCCC8 /* MyButton+Content.swift */,
 			);
 			path = MyButton;
 			sourceTree = "<group>";
@@ -1064,7 +1165,9 @@
 			files = (
 				7F6D77512E03CE2F003FC36C /* SwiftDataLocalDataSourceImpl.swift in Sources */,
 				7FA6B90C2D4575AC009E8201 /* MyConcatText.swift in Sources */,
+				7F5A5BFD2E5ADF9B00CFCCC8 /* IconTextButton+Content.swift in Sources */,
 				7F1A81422D40762D00C8CB43 /* FunctionalitiesView.swift in Sources */,
+				7F5A5BE32E5AD2B600CFCCC8 /* ToastPosition.swift in Sources */,
 				7F1A81322D40748500C8CB43 /* UIComponentsView.swift in Sources */,
 				7FE79E0B2D90791A00E30088 /* IconButton.swift in Sources */,
 				7F1A81452D40B47100C8CB43 /* ColorExtension.swift in Sources */,
@@ -1074,8 +1177,10 @@
 				7F6D77542E03CE87003FC36C /* ApiSwiftDataVideo.swift in Sources */,
 				7F1A812D2D4073C700C8CB43 /* UIComponentsRoute.swift in Sources */,
 				7F1A813C2D40755100C8CB43 /* FunctionalitiesCoordinator.swift in Sources */,
+				7F5A5BFB2E5ADF5B00CFCCC8 /* IconButton+Content.swift in Sources */,
 				7FA6B91B2D45F19C009E8201 /* UIFunctionalitiesOption.swift in Sources */,
 				7FA6B91D2D45F830009E8201 /* FavoriteView.swift in Sources */,
+				7F5A5BF22E5ADBA800CFCCC8 /* MyText+Content.swift in Sources */,
 				7F1A81082D40363300C8CB43 /* Route.swift in Sources */,
 				7FA6B8F12D430D07009E8201 /* Font.swift in Sources */,
 				7FA6B8F32D44392D009E8201 /* Dimensions.swift in Sources */,
@@ -1084,12 +1189,12 @@
 				7F1337162E34A02C0036378E /* ToggleFavoriteUseCase.swift in Sources */,
 				7FA6B8FC2D444144009E8201 /* LabelViewModel.swift in Sources */,
 				7F72FDB72E02623300D0633D /* SwiftDataViewModel.swift in Sources */,
-				7FCC9E512DDFDDEB00F25C68 /* SafeAreaCustomVStack.swift in Sources */,
 				7FA6B9052D44B4DE009E8201 /* FontsExtension.swift in Sources */,
 				7F6D774F2E03CD4D003FC36C /* SwiftDataRepositoryImpl.swift in Sources */,
 				7F72FDB52E02611600D0633D /* SwiftDataView.swift in Sources */,
 				7F1A811F2D406EA100C8CB43 /* MainTabModule.swift in Sources */,
 				7F1A81162D403C8700C8CB43 /* MainControllerProvider.swift in Sources */,
+				7F5A5BF42E5ADC1B00CFCCC8 /* MyConcatText+Content.swift in Sources */,
 				7F13371D2E36D6070036378E /* DataBackwardModule.swift in Sources */,
 				7F6D77662E03D15C003FC36C /* SwiftDataDataMapper.swift in Sources */,
 				7F6D776A2E03D411003FC36C /* DomainSwiftDataVideo.swift in Sources */,
@@ -1098,15 +1203,22 @@
 				7FA6B91F2D45F836009E8201 /* FavoriteViewModel.swift in Sources */,
 				7FCC9E582DE1887400F25C68 /* CustomHeaderViewModel.swift in Sources */,
 				7FA6B9162D45EE22009E8201 /* DataBackwardView.swift in Sources */,
+				7F5A5BEE2E5ADA6300CFCCC8 /* GradientHeader.swift in Sources */,
 				7F65872E2E276F2600FAC7FB /* GetAllVideosUseCase.swift in Sources */,
+				7F5A5BFF2E5AE00500CFCCC8 /* GradientHeader+Content.swift in Sources */,
 				7FE79DFC2D90746E00E30088 /* ButtonView.swift in Sources */,
-				7FE79E082D9077CE00E30088 /* MyConcatText+Content.swift in Sources */,
+				7FE79E082D9077CE00E30088 /* MyConcatTextStyle.swift in Sources */,
 				7FA6B8E92D430763009E8201 /* UIColorExtension.swift in Sources */,
+				7F5A5BE52E5AD2D300CFCCC8 /* ToastBehavior.swift in Sources */,
+				7F5A5BF62E5ADC5D00CFCCC8 /* MyButton+Content.swift in Sources */,
 				7FE79DFE2D9074AC00E30088 /* ButtonViewModel.swift in Sources */,
+				7F5A5BD92E5A9F0100CFCCC8 /* ToastMenuView.swift in Sources */,
 				7FA6B9072D455DE2009E8201 /* TextExtension.swift in Sources */,
 				7F6D774D2E03CD25003FC36C /* SwiftDataRepository.swift in Sources */,
 				7FE79E152D9083EF00E30088 /* MyButton.swift in Sources */,
 				7F1A811D2D406E8A00C8CB43 /* MainTabCoordinator.swift in Sources */,
+				7F5A5BE92E5AD36700CFCCC8 /* ToastModifier.swift in Sources */,
+				7F5A5BF02E5ADB8300CFCCC8 /* CustomVStack+Content.swift in Sources */,
 				7F1A81352D40749A00C8CB43 /* UIComponentsViewModel.swift in Sources */,
 				7F1337202E36D6930036378E /* SwiftDataModule.swift in Sources */,
 				7F093F7F2DFB6B9500128642 /* IconTextButton.swift in Sources */,
@@ -1117,6 +1229,7 @@
 				7FA6B9132D45B4C3009E8201 /* ImageView.swift in Sources */,
 				7F72FDCB2E028BDC00D0633D /* UiSwiftDataVideo.swift in Sources */,
 				7F1A812A2D4073A400C8CB43 /* UIComponentsModule.swift in Sources */,
+				7F5A5BDB2E5A9F9700CFCCC8 /* ToastMenuViewModel.swift in Sources */,
 				7F6D77462E037EF1003FC36C /* SwiftDataFavoriteViewModel.swift in Sources */,
 				7FE79E122D907CC600E30088 /* Assets.swift in Sources */,
 				7FCC9E4C2DDFD0A600F25C68 /* CustomVStack.swift in Sources */,
@@ -1128,11 +1241,14 @@
 				7F1A811B2D406E6600C8CB43 /* MainTabView.swift in Sources */,
 				7F1A812F2D4073E500C8CB43 /* UIComponentsCoordinator.swift in Sources */,
 				7FA6B9182D45EE2A009E8201 /* DataBackwardViewModel.swift in Sources */,
+				7F5A5BE72E5AD35000CFCCC8 /* ToastView.swift in Sources */,
 				7FA6B9032D4454F1009E8201 /* ToolbarLeadingModifier.swift in Sources */,
 				7F65872A2E276D5B00FAC7FB /* SwiftDataDomainMapper.swift in Sources */,
 				7F6D77562E03CED3003FC36C /* ApiSwiftDataMeta.swift in Sources */,
 				7FA6B90A2D455EFE009E8201 /* MyText.swift in Sources */,
+				7F5A5BF92E5ADC7400CFCCC8 /* MyButtonStyle.swift in Sources */,
 				7F6D77682E03D163003FC36C /* SwiftDataDataMapperImpl.swift in Sources */,
+				7F5A5BE12E5AD27800CFCCC8 /* ToastStyle.swift in Sources */,
 				7F6D77442E037EC7003FC36C /* SwiftDataFavoriteView.swift in Sources */,
 				7FA6B9012D4453C1009E8201 /* ToolbarTrailingModifier.swift in Sources */,
 				7F65872C2E276D6800FAC7FB /* SwiftDataDomainMapperImpl.swift in Sources */,

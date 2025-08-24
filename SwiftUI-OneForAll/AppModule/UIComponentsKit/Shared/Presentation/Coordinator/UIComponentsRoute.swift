@@ -11,4 +11,5 @@ enum UIComponentsRoute: Route {
     case label
     case image
     case button
+    case toast
 }
